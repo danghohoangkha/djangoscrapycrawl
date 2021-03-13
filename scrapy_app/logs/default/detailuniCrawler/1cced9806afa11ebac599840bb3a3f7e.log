@@ -1,0 +1,336 @@
+2021-02-10 00:13:25 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scrapy_app)
+2021-02-10 00:13:25 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform Windows-10-10.0.17763-SP0
+2021-02-10 00:13:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-02-10 00:13:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'CONCURRENT_REQUESTS': 1,
+ 'LOG_FILE': 'logs\\default\\detailuniCrawler\\1cced9806afa11ebac599840bb3a3f7e.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, '
+               'like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+2021-02-10 00:13:25 [scrapy.extensions.telnet] INFO: Telnet Password: 666620e41e29c2b2
+2021-02-10 00:13:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-02-10 00:13:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_scrapingbee.ScrapingBeeMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-02-10 00:13:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-02-10 00:13:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2021-02-10 00:13:25 [scrapy.core.engine] INFO: Spider opened
+2021-02-10 00:13:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-02-10 00:13:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6025
+2021-02-10 00:13:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/robots.txt> (referer: None)
+2021-02-10 00:13:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: None)
+2021-02-10 00:13:26 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2021-02-10 00:13:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_t%E1%BA%BF_S%C3%A0i_G%C3%B2n> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_t%E1%BA%BF_S%C3%A0i_G%C3%B2n> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_RMIT_Vi%E1%BB%87t_Nam> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_RMIT_Vi%E1%BB%87t_Nam> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_t%E1%BA%BF_H%E1%BB%93ng_B%C3%A0ng> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_t%E1%BA%BF_H%E1%BB%93ng_B%C3%A0ng> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Nguy%E1%BB%85n_T%E1%BA%A5t_Th%C3%A0nh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Nguy%E1%BB%85n_T%E1%BA%A5t_Th%C3%A0nh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ngo%E1%BA%A1i_ng%E1%BB%AF_-_Tin_h%E1%BB%8Dc_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_-_T%C3%A0i_ch%C3%ADnh_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ngo%E1%BA%A1i_ng%E1%BB%AF_-_Tin_h%E1%BB%8Dc_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_-_T%C3%A0i_ch%C3%ADnh_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_H%C3%B9ng_V%C6%B0%C6%A1ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_H%C3%B9ng_V%C6%B0%C6%A1ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Hoa_Sen> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Hoa_Sen>
+{'url': {'name': 'Đại học Hoa Sen', 'code': None, 'year': '1991', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Dai_hoc_Hoa_Sen_Co_so_Nguyen_Van_Trang.jpg/250px-Dai_hoc_Hoa_Sen_Co_so_Nguyen_Van_Trang.jpg'}}
+2021-02-10 00:13:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT>
+{'url': {'name': 'Đại học FPT', 'code': None, 'year': '2006', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/1/1d/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.png/200px-Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.png'}}
+2021-02-10 00:13:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_D%C3%A2n_l%E1%BA%ADp_V%C4%83n_Lang> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_t%C6%B0_th%E1%BB%A5c_C%C3%B4ng_ngh%E1%BB%87_-_Th%C3%B4ng_tin_Gia_%C4%90%E1%BB%8Bnh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_D%C3%A2n_l%E1%BA%ADp_V%C4%83n_Lang>
+{'url': {'name': 'Đại học Văn Lang', 'code': None, 'year': '1995', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/a/a0/Logo-vlu-2018-wiki.jpg/190px-Logo-vlu-2018-wiki.jpg'}}
+2021-02-10 00:13:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_t%C6%B0_th%E1%BB%A5c_C%C3%B4ng_ngh%E1%BB%87_-_Th%C3%B4ng_tin_Gia_%C4%90%E1%BB%8Bnh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_S%C3%A0i_G%C3%B2n> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_S%C3%A0i_G%C3%B2n>
+{'url': {'name': 'Đại học Công nghệ Sài Gòn', 'code': None, 'year': '1997', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Logo_STU.png/230px-Logo_STU.png'}}
+2021-02-10 00:13:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:36 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://vi.wikipedia.org/w/index.php?title=H%E1%BB%8Dc_vi%E1%BB%87n_K%E1%BB%B9_thu%E1%BA%ADt_M%E1%BA%ADt_m%C3%A3_c%C6%A1_s%E1%BB%9F_ph%C3%ADa_Nam&action=edit&redlink=1>
+2021-02-10 00:13:36 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://vi.wikipedia.org/w/index.php?title=H%E1%BB%8Dc_vi%E1%BB%87n_H%C3%A0nh_ch%C3%ADnh_c%C6%A1_s%E1%BB%9F_ph%C3%ADa_Nam&action=edit&redlink=1>
+2021-02-10 00:13:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_vi%E1%BB%87n_H%C3%A0ng_kh%C3%B4ng_Vi%E1%BB%87t_Nam> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:36 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://vi.wikipedia.org/w/index.php?title=H%E1%BB%8Dc_vi%E1%BB%87n_C%C3%B4ng_ngh%E1%BB%87_B%C6%B0u_ch%C3%ADnh_Vi%E1%BB%85n_th%C3%B4ng_c%C6%A1_s%E1%BB%9F_2,_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh&action=edit&redlink=1>
+2021-02-10 00:13:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Nh%E1%BA%A1c_vi%E1%BB%87n_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_vi%E1%BB%87n_H%C3%A0ng_kh%C3%B4ng_Vi%E1%BB%87t_Nam>
+{'url': {'name': 'Học viện Hàng không Việt Nam', 'code': 'HHK\n', 'year': '2006\n', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/1/1e/Hoc_vien_Hang_khongVN.PNG/200px-Hoc_vien_Hang_khongVN.PNG'}}
+2021-02-10 00:13:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Nh%E1%BA%A1c_vi%E1%BB%87n_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Y_khoa_Ph%E1%BA%A1m_Ng%E1%BB%8Dc_Th%E1%BA%A1ch> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Y_D%C6%B0%E1%BB%A3c_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Y_khoa_Ph%E1%BA%A1m_Ng%E1%BB%8Dc_Th%E1%BA%A1ch>
+{'url': {'name': 'Đại học Y khoa Phạm Ngọc Thạch', 'code': 'TYS', 'year': '1988', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/YPhamNgocThach.png/250px-YPhamNgocThach.png'}}
+2021-02-10 00:13:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Y_D%C6%B0%E1%BB%A3c_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_V%C4%83n_h%C3%B3a_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_V%C4%83n_h%C3%B3a_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Văn hóa', 'code': 'VHS', 'year': '1976', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/a/a5/Logo-Dai-hoc-Van-hoa-TPHCM.png/100px-Logo-Dai-hoc-Van-hoa-TPHCM.png'}}
+2021-02-10 00:13:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Vi%E1%BB%87t_-_%C4%90%E1%BB%A9c> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Vi%E1%BB%87t_-_%C4%90%E1%BB%A9c>
+{'url': {'name': 'Đại học Việt Đức', 'code': 'VGU', 'year': '2008', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/5/5a/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Vi%E1%BB%87t_-_%C4%90%E1%BB%A9c.PNG'}}
+2021-02-10 00:13:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%B4n_%C4%90%E1%BB%A9c_Th%E1%BA%AFng> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%B4n_%C4%90%E1%BB%A9c_Th%E1%BA%AFng>
+{'url': {'name': 'Đại học Tôn Đức Thắng', 'code': 'DTT', 'year': '1997', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/1/1b/T%C4%90T_logo.png/200px-T%C4%90T_logo.png'}}
+2021-02-10 00:13:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%A0i_nguy%C3%AAn_-_M%C3%B4i_tr%C6%B0%E1%BB%9Dng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%A0i_nguy%C3%AAn_-_M%C3%B4i_tr%C6%B0%E1%BB%9Dng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Tài nguyên – Môi trường', 'code': 'DTM', 'year': '1976', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/4/46/Logo_HCMUNRE.png/100px-Logo_HCMUNRE.png'}}
+2021-02-10 00:13:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%A0i_ch%C3%ADnh_-_Marketing> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%A0i_ch%C3%ADnh_-_Marketing>
+{'url': {'name': 'Đại học Tài chính – Marketing', 'code': 'DMS', 'year': '1976', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/3/3e/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%A0i_ch%C3%ADnh_-_Marketing.png/160px-%C4%90%E1%BA%A1i_h%E1%BB%8Dc_T%C3%A0i_ch%C3%ADnh_-_Marketing.png'}}
+2021-02-10 00:13:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Tr%E1%BA%A7n_%C4%90%E1%BA%A1i_Ngh%C4%A9a> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:43 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://vi.wikipedia.org/w/index.php?title=Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Th%E1%BB%A7y_l%E1%BB%A3i_-_C%C6%A1_s%E1%BB%9F_2&action=edit&redlink=1>
+2021-02-10 00:13:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Tr%E1%BA%A7n_%C4%90%E1%BA%A1i_Ngh%C4%A9a> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Th%E1%BB%83_d%E1%BB%A5c_th%E1%BB%83_thao_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Th%E1%BB%83_d%E1%BB%A5c_th%E1%BB%83_thao_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Sư phạm', 'code': 'SPS', 'year': '1957', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Logo_s%E1%BB%A5pham.png'}}
+2021-02-10 00:13:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_Th%E1%BB%83_d%E1%BB%A5c_Th%E1%BB%83_thao_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_K%E1%BB%B9_thu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_Th%E1%BB%83_d%E1%BB%A5c_Th%E1%BB%83_thao_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Sư phạm Thể dục Thể thao', 'code': 'STS', 'year': '1976', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/f/f1/TDTT.gif'}}
+2021-02-10 00:13:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_K%E1%BB%B9_thu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C3%A2n_kh%E1%BA%A5u_-_%C4%90i%E1%BB%87n_%E1%BA%A3nh_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C3%A0i_G%C3%B2n> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C3%A2n_kh%E1%BA%A5u_-_%C4%90i%E1%BB%87n_%E1%BA%A3nh_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C3%A0i_G%C3%B2n>
+{'url': {'name': 'Đại học Sài Gòn', 'code': 'SGD', 'year': '1972', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/0/09/Saigon_University_logo.jpg/250px-Saigon_University_logo.jpg'}}
+2021-02-10 00:13:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_t%E1%BA%BF,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_t%E1%BA%BF,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Quốc tế', 'code': 'QSQ', 'year': '2003', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/f/f2/Logo-HCMIU.jpg'}}
+2021-02-10 00:13:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_N%C3%B4ng_L%C3%A2m_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_N%C3%B4ng_L%C3%A2m_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Nông Lâm', 'code': 'NLS', 'year': '1955', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/0/08/Logo_HCMUAF.png/230px-Logo_HCMUAF.png'}}
+2021-02-10 00:13:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ng%C3%A2n_h%C3%A0ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ng%C3%A2n_h%C3%A0ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Ngân hàng', 'code': 'NHS', 'year': '1976', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/b/bc/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ng%C3%A2n_h%C3%A0ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh.png/160px-%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ng%C3%A2n_h%C3%A0ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh.png'}}
+2021-02-10 00:13:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ngo%E1%BA%A1i_th%C6%B0%C6%A1ng_c%C6%A1_s%E1%BB%9F_2,_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ngo%E1%BA%A1i_th%C6%B0%C6%A1ng_c%C6%A1_s%E1%BB%9F_2,_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Ngoại thương', 'code': 'NTS', 'year': '1993', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/9/95/FTU%27s_logo.jpg/100px-FTU%27s_logo.jpg'}}
+2021-02-10 00:13:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_M%E1%BB%B9_thu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_M%E1%BB%B9_thu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_M%E1%BB%9F_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_M%E1%BB%9F_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Mở', 'code': 'MBS', 'year': '1990', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/b/b2/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_M%E1%BB%9F_TPHCM.png/200px-Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_M%E1%BB%9F_TPHCM.png'}}
+2021-02-10 00:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Lu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Lu%E1%BA%ADt_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Lao_%C4%91%E1%BB%99ng_-_X%C3%A3_h%E1%BB%99i_c%C6%A1_s%E1%BB%9F_2,_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Lao_%C4%91%E1%BB%99ng_-_X%C3%A3_h%E1%BB%99i_c%C6%A1_s%E1%BB%9F_2,_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Lao động – Xã hội cơ sở 2', 'code': 'DLS\n', 'year': '1999\n', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Lao_%C4%91%E1%BB%99ng_-_X%C3%A3_h%E1%BB%99i_%28CSII%29.jpg/250px-Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Lao_%C4%91%E1%BB%99ng_-_X%C3%A3_h%E1%BB%99i_%28CSII%29.jpg'}}
+2021-02-10 00:13:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ki%E1%BA%BFn_tr%C3%BAc_HCM> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Ki%E1%BA%BFn_tr%C3%BAc_HCM>
+{'url': {'name': 'Đại học Kiến Trúc', 'code': 'KTS', 'year': '1926', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Logo_of_University_of_Architecture_Ho_Chi_Minh_City.png/100px-Logo_of_University_of_Architecture_Ho_Chi_Minh_City.png'}}
+2021-02-10 00:13:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Kinh tế', 'code': 'KSA', 'year': '1976', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/9/9a/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90H_Kinh_t%E1%BA%BF_Tp.HCM.jpg/220px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90H_Kinh_t%E1%BA%BF_Tp.HCM.jpg'}}
+2021-02-10 00:13:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_-_Lu%E1%BA%ADt,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Khoa_h%E1%BB%8Dc_X%C3%A3_h%E1%BB%99i_v%C3%A0_Nh%C3%A2n_v%C4%83n,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_-_Lu%E1%BA%ADt,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Kinh tế – Luật', 'code': 'QSK', 'year': '2000', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Logo_UEL_-_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_-_Lu%E1%BA%ADt.png/100px-Logo_UEL_-_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Kinh_t%E1%BA%BF_-_Lu%E1%BA%ADt.png'}}
+2021-02-10 00:13:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Khoa_h%E1%BB%8Dc_T%E1%BB%B1_nhi%C3%AAn,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Khoa_h%E1%BB%8Dc_X%C3%A3_h%E1%BB%99i_v%C3%A0_Nh%C3%A2n_v%C4%83n,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Khoa học Xã hội và Nhân văn', 'code': 'QSX', 'year': '1955', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90H_KHXHNV%2C_%C4%90HQG-HCM.png/100px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90H_KHXHNV%2C_%C4%90HQG-HCM.png'}}
+2021-02-10 00:13:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Khoa_h%E1%BB%8Dc_T%E1%BB%B1_nhi%C3%AAn,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Khoa học Tự nhiên', 'code': 'QST', 'year': '1947', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/9/95/Logo-KHTN_01.jpg'}}
+2021-02-10 00:13:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Giao_th%C3%B4ng_v%E1%BA%ADn_t%E1%BA%A3i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Giao_th%C3%B4ng_v%E1%BA%ADn_t%E1%BA%A3i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Giao thông Vận tải', 'code': 'GTS', 'year': '1988', 'wallImage': 'https://upload.wikimedia.org/wikipedia/vi/thumb/f/f7/HCMUTRANS.png/125px-HCMUTRANS.png'}}
+2021-02-10 00:13:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Giao_th%C3%B4ng_V%E1%BA%ADn_t%E1%BA%A3i_c%C6%A1_s%E1%BB%9F_2> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Giao_th%C3%B4ng_V%E1%BA%ADn_t%E1%BA%A3i_c%C6%A1_s%E1%BB%9F_2>
+{'url': {'name': 'Đại học Giao thông Vận tải cơ sở 2', 'code': 'GSA', 'year': '1990', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Logoutc2hcmc.jpg/230px-Logoutc2hcmc.jpg'}}
+2021-02-10 00:13:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%E1%BA%A3nh_s%C3%A1t_Nh%C3%A2n_d%C3%A2n> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_Th%C3%B4ng_tin,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%E1%BA%A3nh_s%C3%A1t_Nh%C3%A2n_d%C3%A2n> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_Th%C3%B4ng_tin,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Công nghệ Thông tin', 'code': 'QSC', 'year': '2006', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ho_Chi_Minh_City_University_of_Information_Technology.JPG/100px-Ho_Chi_Minh_City_University_of_Information_Technology.JPG'}}
+2021-02-10 00:13:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_nghi%E1%BB%87p_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_nghi%E1%BB%87p_Th%E1%BB%B1c_ph%E1%BA%A9m_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_nghi%E1%BB%87p_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_B%C3%A1ch_khoa,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_nghi%E1%BB%87p_Th%E1%BB%B1c_ph%E1%BA%A9m_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_B%C3%A1ch_khoa,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh>
+{'url': {'name': 'Đại học Bách Khoa', 'code': 'QSB', 'year': '1957', 'wallImage': 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HCMUT_official_logo.png/100px-HCMUT_official_logo.png'}}
+2021-02-10 00:13:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_An_ninh_nh%C3%A2n_d%C3%A2n_(Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+2021-02-10 00:13:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_An_ninh_nh%C3%A2n_d%C3%A2n_(Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)> (referer: https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_tr%C6%B0%E1%BB%9Dng_%C4%91%E1%BA%A1i_h%E1%BB%8Dc_t%E1%BA%A1i_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\detailuni.py", line 98, in parse_2
+    arr_object['wallImage'] = "https:"+response.css(
+TypeError: can only concatenate str (not "NoneType") to str
+2021-02-10 00:13:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-02-10 00:13:56 [asyncio] DEBUG: Using proactor: IocpProactor
+2021-02-10 00:13:57 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 4,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 4,
+ 'downloader/request_bytes': 34957,
+ 'downloader/request_count': 52,
+ 'downloader/request_method_count/GET': 52,
+ 'downloader/response_bytes': 1017412,
+ 'downloader/response_count': 52,
+ 'downloader/response_status_count/200': 52,
+ 'dupefilter/filtered': 3,
+ 'elapsed_time_seconds': 31.266904,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 2, 9, 17, 13, 57, 175479),
+ 'item_scraped_count': 29,
+ 'log_count/DEBUG': 87,
+ 'log_count/ERROR': 21,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 52,
+ 'robotstxt/forbidden': 4,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 55,
+ 'scheduler/dequeued/memory': 55,
+ 'scheduler/enqueued': 55,
+ 'scheduler/enqueued/memory': 55,
+ 'spider_exceptions/TypeError': 21,
+ 'start_time': datetime.datetime(2021, 2, 9, 17, 13, 25, 908575)}
+2021-02-10 00:13:57 [scrapy.core.engine] INFO: Spider closed (finished)

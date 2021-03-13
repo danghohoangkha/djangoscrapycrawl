@@ -1,0 +1,542 @@
+2021-02-25 00:27:19 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scrapy_app)
+2021-02-25 00:27:19 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform Windows-10-10.0.17763-SP0
+2021-02-25 00:27:19 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-02-25 00:27:19 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'CONCURRENT_REQUESTS': 1,
+ 'LOG_FILE': 'logs\\default\\icrawler\\8a6dd15576c511eb91f59840bb3a3f7e.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, '
+               'like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+2021-02-25 00:27:19 [scrapy.extensions.telnet] INFO: Telnet Password: 36c40fd13194cfbd
+2021-02-25 00:27:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-02-25 00:27:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_scrapingbee.ScrapingBeeMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-02-25 00:27:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-02-25 00:27:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2021-02-25 00:27:19 [scrapy.core.engine] INFO: Spider opened
+2021-02-25 00:27:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-02-25 00:27:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2021-02-25 00:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/robots.txt> (referer: None)
+2021-02-25 00:27:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html> (referer: None)
+2021-02-25 00:27:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-van-hien.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-van-hien.html>
+{'url': {'vnName': 'Đại học Văn Hiến', 'engName': 'Van Hien University (VHU)', 'code': 'DVH', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Liên thông - Văn bằng 2', 'address': ['Số\xa0'], 'phone': '028.3832.0333', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d04030b022d1b051843080918431b03">[email\xa0protected]</a>', 'website': 'http://vhu.edu.vn/', 'facebook': 'https://www.facebook.com/vhu.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-dong-thap.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-dong-thap.html>
+{'url': {'vnName': 'Đại học Đồng Tháp', 'engName': 'Dong Thap University (DTHU)', 'code': 'SPD', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Văn bằng 2 - Hợp tác quốc tế - Hệ tại chức', 'address': ['783 Phạm Hữu Lầu, Phường 6, thành phố Cao Lãnh, tỉnh Đồng Tháp'], 'phone': '(0277) 3881518', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="87e3efe3f3c7e3f3eff2a9e2e3f2a9f1e9">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-dong-nai.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-dong-nai.html>
+{'url': {'vnName': '', 'engName': 'Dong Nai University (DNU)', 'code': 'DNU', 'type': 'Công lập', 'levelEdu': 'Trung Cấp - Cao đẳng - Đại học - Sau Đại học - Tại Chức - Văn bằng 2', 'address': ['Số 4, Lê Quý Đôn, P.Tân Hiệp, TP Biên Hòa, Đồng Nai'], 'phone': '025.1382.4684', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="86eaefe3e8eee3c6e2e8f6f3a8e3e2f3a8f0e8">[email\xa0protected]</a>', 'website': 'http://www.dnpu.edu.vn', 'side': 'Nam'}}
+2021-02-25 00:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-y-khoa-pham-ngoc-thach.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-y-khoa-pham-ngoc-thach.html>
+{'url': {'vnName': '', 'engName': 'Pham Ngoc Thach University of Medicine (PNTU)', 'code': 'TYS', 'levelEdu': 'Đại học chính quy - Sau Đại học - Liên kết quốc tế', 'address': ['Số 2 Dương Quang Trung, P.12, Q.10, TP.HCM (Số cũ: 86/2 Thành Thái, P.12, Q.10, TP.HCM)'], 'phone': '028.38.652.435', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="51383f373e11213f257f3435247f">[email\xa0protected]</a>vn', 'website': 'https://www.pnt.edu.vn/', 'facebook': 'https://www.facebook.com/dhyk.pnt/', 'side': 'Nam'}}
+2021-02-25 00:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-y-duoc-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-y-duoc-tphcm.html>
+{'url': {'vnName': '', 'engName': 'University of Medicine and Pharmacy at Ho Chi Minh (UMP HCM)', 'code': 'YDS', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học chính quy - Sau Đại học - Tại chức - Văn bằng 2 - Liên thông', 'address': ['217 Hồng Bàng, Q.5, TP. Hồ Chí Minh'], 'phone': '(028).3855.8411', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="50393e363f102934237e3534257e263e">[email\xa0protected]</a>', 'website': 'https://ump.edu.vn/', 'facebook': 'https://www.facebook.com/YDS.UMP/', 'side': 'Nam'}}
+2021-02-25 00:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-y-duoc-can-tho.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-y-duoc-can-tho.html>
+{'url': {'vnName': '', 'engName': 'Can Tho University of Medicine and Pharmacy (CTUMP)', 'code': 'Y', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học', 'address': ['Số 179, đường Nguyễn Văn Cừ, P. An Khánh, Q. Ninh Kiều, TP. Cần Thơ'], 'phone': '0292.3739.730', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6c5d2d3cbd6e6c5d2d3cbd688c3c2d388d0c8">[email\xa0protected]</a>', 'website': 'http://www.ctump.edu.vn/', 'facebook': 'https://www.facebook.com/TruongDaiHocYDuocCanTho/', 'side': 'Nam'}}
+2021-02-25 00:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-xay-dung-mien-tay.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-xay-dung-mien-tay.html>
+{'url': {'vnName': 'Đại học Xây dựng Miền Tây', 'engName': 'Mien Tay Construction University (MTU)', 'code': 'MTU', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Liên thông - Văn bằng 2 - Bồi dưỡng ngắn hạn', 'address': ['Số 20B Phó Cơ Điều, Phường 3, TP. Vĩnh Long, Tỉnh Vĩnh Long'], 'phone': '0270.3825.903', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2a484b4448434f445e4b5a6a475e5f044f4e5f045c44">[email\xa0protected]</a>', 'website': 'http://www.mtu.edu.vn/', 'facebook': 'https://www.facebook.com/tuyensinh.mtu.edu.vn', 'side': 'Nam'}}
+2021-02-25 00:27:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-vo-truong-toan.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-vo-truong-toan.html>
+{'url': {'vnName': '', 'engName': 'Vo Truong Toan University (VTTU)', 'code': 'VTT', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Liên thông', 'address': ['Quốc Lộ 1A, Tân Phú Thạnh, Châu Thành A, Hậu Giang '], 'phone': '(0293) 3953 222 - (0293) 3953 666', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fc95929a93bc8a888889d2999889d28a92">[email\xa0protected]</a>', 'website': 'http://vttu.edu.vn/', 'facebook': 'https://www.facebook.com/vttu.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:27:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-viet-duc-co-so-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/dai-hoc-viet-duc-co-so-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:27:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-viet-duc-co-so-binh-duong.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-viet-duc-co-so-binh-duong.html>
+{'url': {'vnName': '', 'engName': 'Vietnamese - German University (VGU)', 'code': 'VGU', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau Đại học - Liên kết Quố', 'address': ['Đường Lê Lai, Phường Hòa Phú, Thành phố Thủ Dầu Một, Tỉnh Bình Dương'], 'phone': '(0274).222.0990', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="563f3830391620312378333223782038">[email\xa0protected]</a>', 'website': 'https://vgu.edu.vn/', 'facebook': 'https://www.facebook.com/Vietnamese.German.University/', 'side': 'Nam'}}
+2021-02-25 00:27:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-van-lang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-van-lang.html>
+{'url': {'vnName': 'Đại học Văn Lang', 'engName': 'Van Lang University (VLU)', 'code': 'DVL', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau Đại học - Liên kết Quốc tế', 'address': ['Trụ sở chính: 45 Nguyễn Khắc Nhu, P. Cô Giang, Q.1, Tp. HCM', 'Cơ sở 2: 233A Phan Văn Trị , P.11, Q. Bình Thạnh, Tp. HCM', 'Cơ sở 3: 80/68 Dương Quảng Hàm, P.5, Q. Gò Vấp, Tp. HCM;\xa0'], 'phone': '028.3836.7933 -\xa0028.710.99233 - 028 7105 9999', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="36461842434f5358455f585e764057585a57585143585f18535243184058">[email\xa0protected]</a>', 'website': 'https://www.vanlanguni.edu.vn/', 'facebook': 'https://www.facebook.com/truongdaihocvanlang/', 'side': 'Nam'}}
+2021-02-25 00:27:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-van-hoa-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-van-hoa-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đ', 'engName': 'Ho Chi Minh City University of Culture (HCMUC)', 'code': 'VHS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học – Liên kết quốc tế', 'address': ['Cơ sở 1: Số 51 đường Quốc Hương, phường Thảo Điền, Quận 2, TP. Hồ Chí Minh', 'Cơ sở 2: Số 288 Đỗ Xuân Hợp, P.Phước Long A, Quận 9, TP.HCM'], 'phone': '028.389.92.901', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e6a6678664e666d637b6d206b6a7b207860">[email\xa0protected]</a>', 'website': 'http://www.hcmuc.edu.vn/', 'facebook': 'https://www.facebook.com/daihocvanhoa.vhs/', 'side': 'Nam'}}
+2021-02-25 00:27:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tra-vinh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-tra-vinh.html>
+{'url': {'vnName': '', 'engName': 'Tra Vinh University (TVU)', 'code': 'DVT', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2 - Liên kết Quốc tế', 'address': ['Số 126 Nguyễn Thiện Thành – Khóm 4, Phường 5, Thành phố Trà Vinh, Tỉnh Trà Vinh '], 'phone': '0294.3855.246', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1e7c7f707c777b706a7f6e697b7c6d776a7b5e6a686b307b7a6b306870">[email\xa0protected]</a>', 'website': 'https://www.tvu.edu.vn/', 'facebook': 'https://www.facebook.com/TraVinhUniversity.TVU/', 'side': 'Nam'}}
+2021-02-25 00:27:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ton-duc-thang-co-so-ca-mau.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:27:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ton-duc-thang-co-so-ca-mau.html>
+{'url': {'vnName': 'Đại học Tôn Đức Thắng (cơ sở Cà Mau)', 'code': 'TDTU', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học', 'address': ['Đường Mậu Thân, Khóm 6, Phường 9, TP.Cà Mau, Tỉnh Cà Mau'], 'website': 'http://tdtu.edu.vn/', 'facebook': 'https://www.facebook.com/tonducthanguniversity', 'side': 'Nam'}}
+2021-02-25 00:28:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ton-duc-thang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ton-duc-thang.html>
+{'url': {'vnName': 'Đại học Tôn Đức Thắng', 'engName': 'Ton Đuc Thang University (TDTU)', 'code': 'DTT', 'type': 'Công lập', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học - Sau đại học - Liên kết quốc tế', 'address': ['Số 19 Nguyễn Hữu Thọ, phường Tân Phong, quận 7, TP. Hồ Chí Minh'], 'phone': '(028).3775.5035', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a8dcdddec9c6dcddd1cdc6dbc1c6c0e8dcccdcdd86cdccdd86dec6">[email\xa0protected]</a>', 'website': 'http://www.tdtu.edu.vn/', 'facebook': 'https://www.facebook.com/tonducthanguniversity', 'side': 'Nam'}}
+2021-02-25 00:28:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tien-giang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-tien-giang.html>
+{'url': {'vnName': '', 'engName': 'Tien Giang University (TGU)', 'code': 'TTG', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Tại chức - Văn bằng 2', 'address': ['Trụ sở chính: 119 Ấp Bắc - Phường 05 - Thành phố Mỹ Tho - Tỉnh Tiền Giang', 'Cơ sở 2: Km 1964, QL1A, Long Bình, Long An, Châu Thành, Tiền Giang.', 'Cơ sở Thân Cửu Nghĩa: Nhánh cao tốc số 1, ấp Thân Bình, Thân Cửu Nghĩa, Châu Thành, Tiền Giang'], 'phone': '0273 3 872 624 - 0273 6 250 200', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4d0d5dddcdbd7c0d3f4c0d3c19ad1d0c19ac2da">[email\xa0protected]</a>', 'website': 'http://www.tgu.edu.vn/', 'facebook': 'https://www.facebook.com/truongdaihoctiengiang/', 'side': 'Nam'}}
+2021-02-25 00:28:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-thuy-loi-co-so-2.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-thuy-loi-co-so-2.html>
+{'url': {'vnName': 'Đại học Thủy lợi - Cơ sở 2', 'engName': 'Thuy Loi University (TLU)', 'code': 'TLS', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Tại chức - Liên kết quốc tế', 'address': ['Trụ sở chính: Số 2 Trường Sa, P.17, Q. Bình Thạnh, Tp. Hồ Chí Minh. SĐT:\xa0(84).28.38400532', 'Trụ sở tại Bình Dương: P. An Thạnh, TX. Thuận An, Bình Dương. SĐT:\xa0(84).274.3748620'], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8fecfcbdcffbe3faa1eaebfaa1f9e1">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/cs2daihocthuyloi/', 'side': 'Nam'}}
+2021-02-25 00:28:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-thu-dau-mot.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-thu-dau-mot.html>
+{'url': {'vnName': '', 'engName': 'Thu Dau Mot University (TDMU)', 'code': 'TDM', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Liên thông - Tại chức - Văn bằng 2', 'address': ['Số 06, Trần Văn Ơn, Phú Hòa, Thủ Dầu Một, Bình Dương'], 'phone': '(0274).382.2518 - (0274).383.7150', 'email': 'trungtamtuye<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab4a9b3b4b29aaebeb7aff4bfbeaff4acb4">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/dhtdm2009/', 'side': 'Nam'}}
+2021-02-25 00:28:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-the-duc-the-thao-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-the-duc-the-thao-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Thể dục thể thao Thành phố Hồ Chí Minh', 'engName': 'Hochiminh City University of Sport (HCUS)', 'code': 'TDS', 'type': 'Công lập', 'levelEdu': 'Đại học – Sau đại học –Tại chức', 'address': ['Khu phố 6, phường Linh Trung, quận Thủ Đức, TP. HCM'], 'phone': '083.896.0322', 'facebook': 'https://www.facebook.com/Suhcmedu.vn/', 'side': 'Nam'}}
+2021-02-25 00:28:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tay-do.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/dai-hoc-tay-do.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:28:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tan-tao.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-tan-tao.html>
+{'url': {'vnName': 'Đại học Tân Tạo', 'engName': 'Tan Tao University (TTU)', 'code': 'TTU', 'type': 'Dân lập', 'levelEdu': 'Đại học ', 'address': ['Đại lộ Đại học Tân Tạo, TP.Ecity Tân Đức, Đức Hòa, Long An'], 'phone': '+84 (272) 376 9216', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="442d2a222b043030316a2120316a322a">[email\xa0protected]</a>', 'website': 'http://ttu.edu.vn/', 'facebook': 'https://www.facebook.com/tantaouniversity/', 'side': 'Nam'}}
+2021-02-25 00:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tai-nguyen-va-moi-truong-tphcm-co-so-dong-nai.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-tai-nguyen-va-moi-truong-tphcm-co-so-dong-nai.html>
+{'url': {'vnName': '', 'code': 'DTM', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Văn bằng 2 - Liên thông - Tại chức', 'address': ['Ấp Long Đức 3 - xã Tam Phước - Thành phố Biên Hòa, Tỉnh Đồng Nai, Việt Nam'], 'phone': '061.351.1041', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2d1c180f2dad1dfc7dcc0d79cd7d6c79cc4dc">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/hcmunrers/', 'side': 'Nam'}}
+2021-02-25 00:28:20 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 20 items (at 20 items/min)
+2021-02-25 00:28:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tai-nguyen-va-moi-truong-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-tai-nguyen-va-moi-truong-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Tài nguyên và Môi trường Thành phố Hồ Chí Minh', 'engName': 'Ho Chi Minh University of Natural Resources and Environment (HCMUNRE)', 'code': 'DTM', 'type': 'Công lập', 'levelEdu': 'Trung cấp chuyên nghiệp - Cao đẳng - Đại học – Liên thông – Tại chức – Văn bằng 2 - Liên kết nước ngoài', 'address': ['Cơ sở 1: 236B Lê Văn Sỹ, phường 1, quận Tân Bình, TP. Hồ Chí Minh', 'Cơ sở 2: ấp Long Đức 3, xã Tam Phước, thành phố Biên Hòa, Đồng Nai'], 'phone': '08.3844.3006', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8eecfafdcee6ede3fbe0fceba0ebeafba0f8e0">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:28:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-tai-chinh-marketing.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-tai-chinh-marketing.html>
+{'url': {'vnName': '', 'engName': 'University of Finance - Marketing (UFM)', 'code': 'DMS', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Liên thông - Liên kết quốc tế', 'address': ['Số 2/4 Trần Xuân Soạn, phường Tân Thuận Tây, quận 7, Tp.HCM'], 'phone': '028 38726789 - 38726699', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="65060a0b11040611251003084b0001104b130b">[email\xa0protected]</a>', 'website': 'https://www.ufm.edu.vn/', 'facebook': 'https://www.facebook.com/ufm.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:28:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-su-pham-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-su-pham-tp-hcm.html>
+{'url': {'vnName': '', 'engName': 'Ho Chi Minh City University of Education (HCMUE)', 'code': 'SPS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Liên thông - Văn bằng 2 - Liên kết nước ngoài ', 'address': ['Trụ sở chính: 280 An Dương Vương, phường 4, quận 5, TP Hồ Chí Minh', 'Cơ sở đào tạo: Số 222 Lê Văn Sỹ, phường 14, quận 3, P Hồ Chí Minh'], 'phone': '(028).383.52.020', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e89f8d8a85899b9c8d9aa8808b859d98c68d8c9dc69e86">[email\xa0protected]</a>', 'website': 'http://hcmue.edu.vn/', 'facebook': 'https://www.facebook.com/HCMUE.VN/', 'side': 'Nam'}}
+2021-02-25 00:28:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-su-pham-the-duc-the-thao-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-su-pham-the-duc-the-thao-tphcm.html>
+{'url': {'vnName': 'Đại học Sư phạm Thể dục Thể thao TP.HCM', 'engName': 'Ho Chi Minh City University of Physical Educations and Sport (UPES)', 'code': 'STS', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học ', 'address': ['639 Nguyễn Trãi, phường 11, quận 5, TP. HCM'], 'phone': '028.385.56.300', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9fddfef1ebecb1ecebecdff2f0faebb1fafbeab1e9f1">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:28:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-su-pham-ky-thuat-vinh-long.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-su-pham-ky-thuat-vinh-long.html>
+{'url': {'vnName': 'Đại học Sư phạm Kỹ thuật Vĩnh Long', 'code': 'VLU', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Liên thông - Văn bằng 2 - Liên kết đào tạo', 'address': ['73 Nguyễn Huệ, phường 2, TP. Vĩnh Long, tỉnh Vĩnh Long'], 'phone': '(+84) 02703822141', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3c0c3d8c7c5dff3c5dfc6c7d69dd6d7c69dc5dd">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/spktvl/', 'side': 'Nam'}}
+2021-02-25 00:28:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-su-pham-ky-thuat-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-su-pham-ky-thuat-tphcm.html>
+{'url': {'vnName': '', 'engName': 'Ho Chi Minh City University of Technology and Education (HCMUTE)', 'code': 'SPK', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Văn bằng 2 -Liên thông - Liên kết quốc tế', 'address': ['01 Võ Văn Ngân, P. Linh Chiểu, Q. Thủ Đức, TP. Hồ Chí Minh '], 'phone': '(+84 - 028) 38968641 - (+84 -028) 38961333 - (+84 -028) 37221223', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddadb0b29db5beb0a8a9b8f3b8b9a8f3abb3">[email\xa0protected]</a>', 'website': 'http://hcmute.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:28:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-san-khau-dien-anh-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-san-khau-dien-anh-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Sân khấu - Điện ảnh Thành phố Hồ Chí Minh', 'engName': 'Movie and Stage University ', 'code': 'DSD', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Tại chức - Liên thông - Liên kết quốc tế', 'address': ['Số 125 Cống Quỳnh, phường Nguyễn Cư Trinh, quận 1, TP. HCM'], 'phone': '08.3839.3659 - 08.3839.3658', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5427353a3f3c3521303d313a353a3c14273f30353c37397a3130217a223a">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-sai-gon.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-sai-gon.html>
+{'url': {'vnName': 'Đại học Sài Gòn', 'engName': 'Saigon University (SGU)', 'code': 'SGD', 'type': 'Công lập', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2 - Liên kết quốc tế', 'address': ['Trụ sở chính: 273 An Dương Vương, Quận 5, TP. HCM', 'Cơ sở 1: 105 Bà Huyện Thanh Quan, Quận 3', ', TP. HCM', 'Cơ sở 2: 04 Tôn Đức Thắng, Quận 1', ', TP. HCM', 'Cơ sở 3: 20 Ngô Thời Nhiệm, Quận 3', ', TP. HCM', 'Trường THTH Sài Gòn: 220 Trần Bình Trọng, Quận 5', ', TP. HCM'], 'phone': '(84-8).383.544.09 - 38.352.309', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f697e716f777071785f6c786a317a7b6a316971">[email\xa0protected]</a>', 'website': 'https://sgu.edu.vn/', 'facebook': 'https://www.facebook.com/sgu.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:28:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-rmit-nam-sai-gon.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-rmit-nam-sai-gon.html>
+{'url': {'vnName': '', 'engName': 'RMIT University', 'code': 'RMU', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên kết Quốc tế', 'address': ['702 Nguyễn Văn Linh, Quận 7, Tp. Hồ Chí Minh'], 'phone': '(+84) 28 3776 1369', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c79726d69756e75796f5c6e71756832797869326a72">[email\xa0protected]</a>', 'website': 'https://www.rmit.edu.vn/vi/co-so-nam-sai-gon', 'facebook': 'https://www.facebook.com/RMITUniversityVietnam/', 'side': 'Nam'}}
+2021-02-25 00:28:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-quoc-te-sai-gon.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-quoc-te-sai-gon.html>
+{'url': {'vnName': 'Đại học Quốc tế Sài Gòn', 'engName': 'The Saigon International University (SIU)', 'code': 'TTQ', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Liên kết Quốc tế', 'address': ['8C &amp; 16 Tống Hữu Định, P. Thảo Điền, Q. 2, Tp. HCM'], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8d9dcd5d1cbcbd1d7d6f8cbd1cd96dddccd96ced6">[email\xa0protected]</a>', 'website': 'http://www.siu.edu.vn/', 'facebook': 'https://www.facebook.com/dhquoctesaigon', 'side': 'Nam'}}
+2021-02-25 00:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-quoc-te-mien-dong.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-quoc-te-mien-dong.html>
+{'url': {'vnName': '', 'engName': 'Eastern International University (EIU)', 'code': 'EIU', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau Đại học - Liên kết Quố', 'address': ['Đường Nam Kỳ Khởi Nghĩa, P. Hòa Phú, Tp. Thủ Dầu Một, Tỉnh Bình Dương'], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f0999e969fb0959985de959485de869e">[email\xa0protected]</a>', 'website': 'https://eiu.edu.vn/', 'facebook': 'https://www.facebook.com/eiuvietnam/', 'side': 'Nam'}}
+2021-02-25 00:28:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-quoc-te-hong-bang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-quoc-te-hong-bang.html>
+{'url': {'vnName': 'Đại học Quốc tế Hồng Bàng', 'engName': 'Hong Bang International University (HIU)', 'code': 'HIU', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Liên kết Quốc tế', 'address': ['215 Điện Biên Phủ - Phường 15 - Quận Bình Thạnh - TP.HCM'], 'phone': '028.73083.456 - 0938.69.2015 - 0964.239.172', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bed6d7cbfed6d7cb90c8d0">[email\xa0protected]</a>', 'website': 'http://hiu.vn/', 'facebook': 'https://www.facebook.com/hiu.vn/', 'side': 'Nam'}}
+2021-02-25 00:28:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-quoc-te-dh-quoc-gia-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-quoc-te-dh-quoc-gia-tphcm.html>
+{'url': {'vnName': 'Đại học Quốc tế - ĐH Quốc gia TP.HCM ', 'engName': 'Ho Chi Minh City International University (HCMIU)', 'code': 'QSQ', 'levelEdu': 'Đại học – Sau Đại học – Liên kết quốc tế', 'address': ['Khu phố 6, P. Linh Trung, Q. Thủ Đức, TP.HCM'], 'phone': '(028) 372.44.270', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="61080f070e2109020c08144f0405144f170f">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-quoc-gia-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/dai-hoc-quoc-gia-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 37, in parse_uni
+    inforarr = response.css("body > div.container > div.container-content > div.detail-left > div > ul:nth-child(2)").extract()[0]
+IndexError: list index out of range
+2021-02-25 00:28:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-nong-lam-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:28:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-nong-lam-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Nông Lâm Thành phố Hồ Chí Minh', 'engName': 'Nong Lam University (NLU)', 'code': 'NLS', 'type': 'Công lập', 'levelEdu': 'Đại học - Tại chức - Liên thông - Văn bằng 2 - Liên kết quốc tế', 'address': ['Trụ sở chính: KP6, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh, Việt Nam', 'Phân hiệu Gia Lai: Lê Thánh Tôn, tp. Pleiku, Gia Lai, Việt Nam', 'Phân hiệu Ninh Thuận: TT.Khánh Hải, Ninh Hải, Ninh Thuận, Việt Nam'], 'phone': '028.3896.6780', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a0c0a121b141219121314123a1219170f1b1c541f1e0f540c14">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:29:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-noi-vu-ha-noi-co-so-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-noi-vu-ha-noi-co-so-tphcm.html>
+{'url': {'vnName': 'Trường Đại học Nội vụ Hà Nội (cơ sở Tp.HCM)', 'engName': 'Hanoi University Of Home Affairs 2 (HUHA)', 'code': 'DNV', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Tại chức - Liên thông ', 'address': ['181 Lê Đức Thọ, phường 17, quận Gò Vấp, TP. Hồ Chí Minh'], 'phone': '028.3894.3717', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0a4a8aeb6b4b0a8a3ad80a7ada1a9aceea3afad">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:29:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-nguyen-tat-thanh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-nguyen-tat-thanh.html>
+{'url': {'vnName': 'Đại học Nguyễn Tất Thành', 'engName': 'Nguyen Tat Thanh University (NTTU)', 'code': 'NTT', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Liên thông - Liên kết Quốc tế', 'address': ['300A - Nguyễn Tất Thành, phường 13, quận 4, TP. Hồ Chí Minh'], 'phone': '1900 2039 - 0902 298 300 – 0906 298 300 – 0912 298 300 – 0914 298 300', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="661212121012150f080e2608121248030213481008">[email\xa0protected]</a> – <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0b696a656c626a6663626e7e4b657f7f">[email\xa0protected]</a>', 'website': 'http://ntt.edu.vn/web/', 'facebook': 'https://www.facebook.com/DaiHocNguyenTatThanh/', 'side': 'Nam'}}
+2021-02-25 00:29:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-nguyen-hue-si-quan-luc-quan-2.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-nguyen-hue-si-quan-luc-quan-2.html>
+{'url': {'vnName': '', 'engName': 'Nguyễn Huệ University (NHU)', 'code': 'LBH', 'type': 'Quân sự', 'levelEdu': 'Đại học - Sau đại học', 'address': ['Xã Tam Phước, Thành Phố Biên Hoà, Tỉnh Đồng Nai'], 'phone': '061.3529.100', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4b5b0b9bdba94b0b5bdbcbbb7bab3a1adb1babca1b1fab1b0a1faa2ba">[email\xa0protected]</a>', 'website': 'http://daihocnguyenhue.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:29:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ngoai-thuong-co-so-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ngoai-thuong-co-so-tphcm.html>
+{'url': {'vnName': '', 'engName': 'Foreign Trade University (FTU)', 'code': 'NTS', 'levelEdu': 'Đại học - Sau Đại học - Liên kết quốc tế', 'address': ['Số 15 đường D5, P.25, Q.Bình Thạnh, TP.HCM'], 'phone': '(028).351.27.254 - Hotline (028) 351.27.257', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dfaeb3bbabf1bcaced9fb9abaaf1babbaaf1a9b1">[email\xa0protected]</a>', 'website': 'http://cs2.ftu.edu.vn/', 'facebook': 'https://www.facebook.com/ftutimesofficial/', 'side': 'Nam'}}
+2021-02-25 00:29:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ngoai-ngu-tin-hoc-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ngoai-ngu-tin-hoc-tphcm.html>
+{'url': {'vnName': 'Đại học Ngoại ngữ - Tin học TP.HCM', 'engName': 'Ho Chi Minh City University of Foreign Languages - Information Technology (HUFLIT)', 'code': 'DNT', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2 - Liên kết quốc tế ', 'address': ['155 Sư Vạn Hạnh (nd), phường 13, quận 10, TP.HCM'], 'email': '', 'facebook': 'https://www.facebook.com/huflit.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:29:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ngo-quyen-si-quan-cong-binh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ngo-quyen-si-quan-cong-binh.html>
+{'url': {'vnName': 'Trường Sĩ quan Công binh (tên dân sự Trường Đại học Ngô Quyền)', 'engName': 'Ngo Quyen University (NQU)', 'code': 'SNH', 'type': 'Quân sự', 'levelEdu': 'Cao đẳng - Đại học - Liên kết Quố', 'address': ['229B, đường Bạch Đằng, Phú Cường, TP.Thủ Dầu Một, Bình Dương'], 'phone': '02743 859 632 - 02743 829 434', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbd0d3d8d595cfc8cad8d9fbdcd6dad2d795d8d4d6">[email\xa0protected]</a>', 'website': 'http://www.tsqcb.edu.vn/tsqcb/', 'facebook': 'https://www.facebook.com/daihocNgoQuyen/', 'side': 'Nam'}}
+2021-02-25 00:29:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ngan-hang-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ngan-hang-tp-hcm.html>
+{'url': {'vnName': '', 'engName': 'Banking University of Ho Chi Minh City (BUH)', 'code': 'NHS', 'levelEdu': 'Đại học - Sau Đại học - Liên thông - Văn bằng 2 - Liên kết quốc tế', 'address': ['Trụ sở chính: 36 Tôn Thất Đạm, Quận 1, TP.Hồ Chí Minh', 'Cơ sở Hàm Nghi: 39 Hàm Nghi, Quận 1, TP.Hồ Chí Minh', 'Cơ sở Hoàng Diệu: 56 Hoàng Diệu II, Q.Thủ Đức, TP.Hồ Chí Minh'], 'phone': '(028) 38 291901 - (028) 38 212 430', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f094989e98848098939db0928598de959485de869e">[email\xa0protected]</a>', 'website': 'http://buh.edu.vn/', 'facebook': 'https://www.facebook.com/DHNH.BUH/', 'side': 'Nam'}}
+2021-02-25 00:29:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-nam-can-tho.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-nam-can-tho.html>
+{'url': {'vnName': '', 'engName': 'Nam Can Tho University (NCTU)', 'code': 'DN', 'type': 'Dân lập', 'levelEdu': '', 'address': ['Số 168 Nguyễn Văn Cừ (nối dài), Phường An Bình, Q. Ninh Kiều, TP. Cần Thơ'], 'phone': '(0292) 3 798 222 - 3 798 668', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ce8e2efcce1e3e9f8a2e9e8f9a2fae2">[email\xa0protected]</a>', 'website': 'https://nctu.edu.vn/', 'facebook': 'https://www.facebook.com/NamCanThoUniversity/', 'side': 'Nam'}}
+2021-02-25 00:29:20 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 23 pages/min), scraped 42 items (at 22 items/min)
+2021-02-25 00:29:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-my-thuat-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-my-thuat-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Mỹ thuật Thành phố Hồ Chí Minh', 'engName': 'Ho Chi Minh City University of Fine Arts (HCMUFA)', 'code': 'MTS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Tại chức - Liên kết quốc tế', 'address': ['Số 5 Phan Đăng Lưu, P.13, Q. Bình Thạnh, TP. HCM'], 'phone': '(848).3841.6010', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c35323a331c343f31293a3d72393829722a32">[email\xa0protected]</a>', 'website': 'http://hcmufa.edu.vn/', 'facebook': 'https://www.facebook.com/DHMyThuatHCM/', 'side': 'Nam'}}
+2021-02-25 00:29:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-my-thuat-cong-nghiep-a-chau-co-so-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-my-thuat-cong-nghiep-a-chau-co-so-tp-hcm.html>
+{'url': {'vnName': 'Đại học Mỹ thuật Công nghiệp Á Châu (Cơ sở TP HCM)', 'engName': 'Asia University of Arts and Design (', 'code': 'MCA', 'type': 'Dân lập', 'levelEdu': 'Đại học', 'address': ['Nhà thực hành – Trường Đại học Mỹ thuật Thành phố Hồ Chí Minh, Số 05 Phan Đăng Lưu, Quận Bình Thạnh'], 'phone': '028.6686.3956 - 0909.235.100', 'email': '', 'website': 'http://auad.edu.vn/', 'facebook': 'https://www.facebook.com/auad.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:29:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-mo-dia-chat-cs-vung-tau.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-mo-dia-chat-cs-vung-tau.html>
+{'url': {'vnName': 'Đại học Mỏ Địa chất (CS Vũng Tàu)', 'engName': 'Hanoi University of Mining and Geology (HUMG)', 'code': 'MDA', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Văn bằng 2 - Liên kết quốc tế', 'address': ['Số 139, Đường Phan Chu Trinh, P.2, Tp. Vũng Tàu,\xa0tỉnh Bà Rịa – Vũng Tàu'], 'phone': '0254 3852 178', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0a6a5beb7a4b1a590b8a5bdb7feb5b4a5fea6be">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/MoDiaChat.VungTau/', 'side': 'Nam'}}
+2021-02-25 00:29:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-mo-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-mo-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Mở Thành phố Hồ Chí Minh', 'engName': 'Ho Chi Minh City Open University (OU)', 'code': 'MBS', 'type': 'Công lập', 'levelEdu': 'Đại học - Tại chức -Văn bằng 2 - Liên thông - Liên kết nước ngoài', 'address': ['Cơ sở 1:97 Võ Văn Tần, P. 6, Q. 3, TP. Hồ Chí Minh. ', 'Cơ sở 2:35-37 Hồ Hảo Hớn, P. Cô Giang, Q. 1, TP. Hồ Chí Minh. ', 'Cơ sở 3:371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. Hồ Chí Minh. ', 'Cơ sở 4:02 Mai Thị Lựu, P. Đa Kao, Q. 1, TP. Hồ Chí Minh. ', 'Cơ sở 5:68 Lê Thị Trung, P. Phú Lợi, TP. Thủ Dầu Một, Tỉnh Bình Dương.\xa0', 'Cơ sở 6:Đường số 9, P. Long Bình Tân, TP. Biên Hòa, Tỉnh Đồng Nai. ', 'Cơ sở 7:Tổ dân phố 17 P. Ninh Hiệp, Thị Xã Ninh Hòa, Tỉnh Khánh Hòa.'], 'side': 'Nam'}}
+2021-02-25 00:29:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-luat-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-luat-tphcm.html>
+{'url': {'vnName': '', 'engName': 'Ho Chi Minh City University of Law (HCMUL)', 'code': 'LPS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học – Văn bằng 2 – Liên kết nước ngoài ', 'address': ['Trụ sở chính: Số 02 Nguyễn Tất Thành, phường 12, quận 4,\xa0Tp. Hồ Chí Minh', 'Cơ sở 2: Số 123 Quốc lộ 13, phường Hiệp Bình Chánh, quận Thủ Đức,\xa0Tp. Hồ Chí Minh', 'Cơ sở 3: Phường Long Phước, quận 9, Tp. Hồ Chí Minh'], 'phone': '(028).394.00.989 -\xa01900 5555 14', 'facebook': 'https://www.facebook.com/hcmulaw/', 'side': 'Nam'}}
+2021-02-25 00:29:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-lao-dong-xa-hoi-co-so-2-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-lao-dong-xa-hoi-co-so-2-tphcm.html>
+{'url': {'vnName': 'Đại học Lao động Xã hội - Cơ sở 2 Tp.HCM', 'engName': 'University of Labour and Social Affairs 2 (ULSA2)', 'code': 'DLS', 'levelEdu': 'Đại học - Sau Đại học - Tại chức - Liên thông - Văn bằng 2 ', 'address': ['Số 1018 Tô Ký, phường Tân Chánh Hiệp, quận 12, Tp.Hồ Chí Minh'], 'phone': '028.38837.814', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="335a5d555c735f574b5b1d5657461d455d">[email\xa0protected]</a>', 'website': 'http://www.ldxh.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:29:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ky-thuat-cong-nghe-can-tho.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ky-thuat-cong-nghe-can-tho.html>
+{'url': {'vnName': '', 'code': 'KCC', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học', 'address': ['256 Nguyễn Văn Cừ, Quận Ninh Kiều, Thành phố Cần Thơ'], 'phone': '02923.898.167', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b6c6ded9d8d1ded7d8ded5dedfd8def6d5c2c3d3c298d3d2c398c0d8">[email\xa0protected]</a>', 'website': 'https://www.ctuet.edu.vn/', 'facebook': 'https://www.facebook.com/ctuet1/', 'side': 'Nam'}}
+2021-02-25 00:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kinh-te-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/dai-hoc-kinh-te-tp-hcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:29:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kinh-te-ky-thuat-binh-duong.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kinh-te-ky-thuat-binh-duong.html>
+{'url': {'vnName': '', 'engName': 'Binh Duong Economics and Technology University (BETU)', 'code': 'DKB', 'type': 'Dân lập', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học - Sau Đại học - Liên thông - Tại chức ', 'address': ['Cơ sở 1: 530 Đại Lộ Bình Dương, P Hiệp Thành, TP Thủ Dầu Một, Tỉnh Bình Dương', 'Cơ sở 2: 333 Đường Thuận Giao 16, P Thuận Giao, Thị Xã Thuận An, Tỉnh Bình Dương '], 'phone': '(0274) 3822 847 - (0274) 3870 795 - (0274) 3721 254', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91fae5fae5f3f5d1fae5fae5bff4f5e4bfe7ff">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e591909c808b968c8b8da58e918e91cb808190cb938b">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:29:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kinh-te-cong-nghiep-long-an.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kinh-te-cong-nghiep-long-an.html>
+{'url': {'vnName': 'Đại học Kinh tế Công nghiệp Long An', 'engName': 'Long An University of Economics and Industry', 'code': 'DLA', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Văn bằng 2 - Liên kết đào tạo - Khóa ngắn hạn', 'address': ['Số 938 - QL.1 - P.Khánh Hậu - TP.Tân An - Long An'], 'phone': '(0272) 3512826', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f59c9b939ab591949c9d9a96999a9b92949bdb909180db839b">[email\xa0protected]</a>', 'website': 'https://daihoclongan.edu.vn/', 'facebook': 'https://www.facebook.com/daihockinhtecongnghieplongan/', 'side': 'Nam'}}
+2021-02-25 00:29:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kinh-te-tai-chinh-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kinh-te-tai-chinh-tphcm.html>
+{'url': {'vnName': 'Trường Đại học Kinh tế - Tài chính TP.HCM', 'engName': 'University of Economics and Finance (UEF)', 'code': 'UEF', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2 - Liên kết quốc tế', 'address': ['Trụ sở: 276 - 282 Điện Biên Phủ, P. 17, Q. Bình Thạnh, TP.HCM', 'Cơ sở: 141 - 145 Điện Biên Phủ, P. 15, Q. Bình Thạnh, TP.HCM'], 'phone': '(028) 5422 5555 - (028) 5422 6666', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93e7e6eaf6fde0fafdfbd3e6f6f5bdf6f7e6bde5fd">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:29:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kinh-te-luat-dh-quoc-gia-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kinh-te-luat-dh-quoc-gia-tphcm.html>
+{'url': {'vnName': 'Đại học Kinh tế - Luật (ĐH Quốc gia TP.HCM)', 'engName': 'University of Economics and Law (VNUHCM - UEL)', 'code': 'QSK', 'levelEdu': 'Đại học- Sau Đại học - Văn bằng 2 - Tại chức - Liên kết quốc tế', 'address': ['Số 669 đường Quốc lộ 1, Khu phố 3, phường Linh Xuân, quận Thủ Đức, TP. Hồ Chí Minh'], 'phone': '028 372.44.555 -\xa0028 372.44.550', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d6bfb8b0b996a3b3baf8b3b2a3f8a0b8">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="13676665727d67666a767d607a7d7b5366767f3d7677663d657d">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:29:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kien-truc-thanh-pho-ho-chi-minh-co-so-can-tho.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kien-truc-thanh-pho-ho-chi-minh-co-so-can-tho.html>
+{'url': {'vnName': '', 'engName': 'University of Architecture Ho Chi Minh City (UAH)', 'code': 'KTS', 'type': 'Công lập', 'levelEdu': 'Đại học', 'address': ['Khu đô thị Nam sông Cần Thơ, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ'], 'phone': '(0292).251.303', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="86f2f3ffe3e8f5efe8eec6f3e7eea8e3e2f3a8f0e8">[email\xa0protected]</a>', 'website': 'http://www.uah.edu.vn/', 'facebook': 'https://www.facebook.com/truongdaihockientructphochiminh.uah/', 'side': 'Nam'}}
+2021-02-25 00:29:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kien-truc-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kien-truc-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Kiến trúc Thành phố Hồ Chí Minh', 'engName': 'University of Architecture Ho Chi Minh City (UAH)', 'code': 'KTS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Tại chức - Liên kết quốc tế', 'address': ['Trụ sở chính: Số 196 Pasteur - phường 6 - quận 3 - thành phố Hồ Chí Minh', 'Cơ sở Thủ Đức: Số 48 Đặng Văn Bi - phường Bình Thọ - quận Thủ Đức - TP.Hồ Chí Minh'], 'phone': '(08).38.222.748', 'email': '<a href="/cdn-cgi/l/email-protection#90e0f8fffef7f4f1ffe4f1ffbefbe4e3d0fdfff5e4bef5f4e5bee6fe"><span class="__cf_email__" data-cfemail="a1d1c9cecfc6c5c0ced5c0ce8fcad5d2e1cccec4d58fc4c5d48fd7cf">[email\xa0protected]', 'side': 'Nam'}}
+2021-02-25 00:29:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-kien-giang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-kien-giang.html>
+{'url': {'vnName': 'Đại học Kiên Giang', 'engName': 'Kien Giang University (KGU)', 'code': 'TKG', 'type': 'Công lập', 'levelEdu': 'Đại học - Hợp tác quốc tế', 'address': ['Số 320A, Quốc lộ 61, thị trấn Minh Lương, huyện Châu Thành, tỉnh Kiên Giang'], 'phone': '0297.3.926714', 'website': 'http://www.vnkgu.edu.vn/', 'facebook': 'https://www.facebook.com/truongdaihockiengiang/', 'side': 'Nam'}}
+2021-02-25 00:29:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:29:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dhqg-tphcm.html>
+{'url': {'vnName': 'Đại học Khoa học Xã hội và Nhân văn - ĐHQG TP.HCM ', 'engName': 'University of Social Sciences and Humanities (VNUHCM-USSH)', 'code': 'QSX', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Liên kết quốc tế', 'address': ['số 10-12 Đinh Tiên Hoàng, phường Bến Nghé, quận 1, TP. HCM'], 'phone': '028.38293.828', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="deb6bfb0b6bdb6b7b0b69eb6bdb3abadadb6f0bbbaabf0a8b0">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:30:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-khoa-hoc-tu-nhien-dhqg-tp-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Khoa học Tự nhiên - ĐHQG TP Hồ Chí Minh', 'engName': 'The University of Science (VNUHCM – US)', 'code': 'QST', 'levelEdu': 'Đại học và cao đẳng – Sau Đại học – Liên thông Đại học – Cử nhân Văn bằng 2', 'address': ['227 đường Nguyễn Văn Cừ, phường 4, quận 5, Thành phố Hồ Chí Minh'], 'phone': '(84) 286 2884 499 - (84) 287 3089 899', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2a5b7b0bfb3a1a6b7a092bab1bfa7a6fcb7b6a7fca4bc">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-hung-vuong-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-hung-vuong-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Hùng Vương Thành phố Hồ Chí Minh', 'engName': 'Hung Vuong University Ho Chi Minh City (HVUH)', 'code': 'DHV', 'type': 'Dân lập', 'levelEdu': 'Đại học ', 'address': ['736 Nguyễn Trãi , P11 , Q.5, TP. HCM'], 'phone': '028.3855.3675 - 028.3855.4806 - 028.3855.0264 - 028.3855.4691', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ccb8b9b5a9a2bfa5a2a48ca4bab9a4e2a9a8b9e2baa2">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4bdbab2bb94bca2a1bcfab1b0a1faa2ba">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/hungvuonguni/', 'side': 'Nam'}}
+2021-02-25 00:30:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-hoa-sen.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-hoa-sen.html>
+{'url': {'vnName': 'Đại học Hoa Sen', 'engName': 'Hoa Sen University (HSU)', 'code': 'DTH', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Liên thông - Liên kết Quốc tế', 'address': [''], 'phone': '028.7309.1991', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0470717d616a776d6a6c446c6b6577616a2a6160712a726a">[email\xa0protected]</a>', 'website': 'https://www.hoasen.edu.vn/vi', 'facebook': 'https://www.facebook.com/HoaSenUni/', 'side': 'Nam'}}
+2021-02-25 00:30:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-giao-thong-van-tai-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-giao-thong-van-tai-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Giao thông vận tải Thành phố Hồ Chí Minh', 'engName': 'Ho Chi Minh City University of Transport (UT-HCMC)', 'code': 'GTS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Tại chức - Văn bằng 2 - Liên thông - Liên kết Quốc tế ', 'address': ['Số 2, đường Võ Oanh, P.25, Q. Bình Thạnh, Thành Phố Hồ Chí Minh'], 'phone': '028.3899.1373', 'email': '', 'website': 'https://ut.edu.vn/', 'facebook': 'https://www.facebook.com/tdhgtvttphcm/', 'side': 'Nam'}}
+2021-02-25 00:30:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-gia-dinh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/dai-hoc-gia-dinh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:30:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-fpt-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-fpt-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học FPT', 'engName': 'FPT University ', 'code': 'FPT', 'type': 'Dân lập', 'levelEdu': 'Đại học – Liên kết nước ngoài', 'address': ['Trụ sở: Lô E2a-7, Đường D1 Khu Công nghệ cao, P.Long Thạnh Mỹ, Q.9, TP.HCM', 'Văn phòng Tuyển sinh: Toà nhà Innovation, CVPM Quang Trung, P. Tân Chánh Hiệp, Q. 12, TP. HCM'], 'phone': '(028).7300.5588', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f4b4e4647404c01474c426f495f5b014a4b5a015941">[email\xa0protected]</a>', 'website': 'http://hcmuni.fpt.edu.vn/', 'facebook': 'https://www.facebook.com/FPTU.HCM/', 'side': 'Nam'}}
+2021-02-25 00:30:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-fpt-can-tho.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-fpt-can-tho.html>
+{'url': {'engName': 'FPT University (FPT)', 'code': 'FPT', 'type': 'Dân lập', 'levelEdu': 'Đại học – Liên kết nước ngoài', 'address': ['Số 160 đường 30/4, phường An Phú, quận Ninh Kiều, TP. Cần Thơ'], 'phone': '(024) 73001866 - (024) 73005588', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4b2f2a222324280b2d3b3f65282426653d25">[email\xa0protected]</a>; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e480858d8c8b87a4829490ca818091ca928a">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/daihocfpt', 'side': 'Nam'}}
+2021-02-25 00:30:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-dau-khi-viet-nam.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-dau-khi-viet-nam.html>
+{'url': {'vnName': 'Đại học Dầu khí Việt Nam', 'engName': 'PetroVietnam University (PVU)', 'code': 'PVU', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học - Bồi dưỡng nâng cao - Liên kết quốc tế', 'address': ['762 Cách mạng tháng tám, P. Long Toàn, Tp. Bà Rịa, Tỉnh Bà Rịa – Vũng Tàu'], 'phone': '(254)3.738879 - (254)3.738877 - (254)3.721979', 'website': 'http://www.pvu.edu.vn/', 'facebook': 'https://www.facebook.com/PVU.PVN/', 'side': 'Nam'}}
+2021-02-25 00:30:20 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 24 pages/min), scraped 64 items (at 22 items/min)
+2021-02-25 00:30:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-dan-lap-lac-hong.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-dan-lap-lac-hong.html>
+{'url': {'vnName': '', 'engName': 'Lac Hong University (LHU)', 'code': 'DLH', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Sau đại học - Liên thông - Văn bằng 2', 'address': ['Số 10 Huỳnh Văn Nghệ, Tp. Biên Hòa, tỉnh Đồng Nai'], 'phone': '025.173.00073', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8d4d9dbd0d7d6dff8d4d0cd96dddccd96ced6">[email\xa0protected]</a>', 'website': 'https://lhu.edu.vn/', 'facebook': 'https://www.facebook.com/lhuniversity/', 'side': 'Nam'}}
+2021-02-25 00:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cuu-long.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cuu-long.html>
+{'url': {'vnName': 'Đại học Cửu Long', 'engName': 'Mekong University (MKU)', 'code': 'DCL', 'type': 'Dân lập', 'levelEdu': 'Đại học - Liên thông - Văn bằng 2 - Sau đại học - Tại Chức', 'address': ['Quốc lộ 1A, Phú Quới, Long Hồ, Vĩnh Long'], 'phone': '0270.38 32 538 ', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5121393e3f36252428343f22383f39113c3a247f3435247f273f">[email\xa0protected]</a> ', 'website': 'http://www.mku.edu.vn/', 'facebook': 'https://www.facebook.com/mku.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghiep-thuc-pham-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghiep-thuc-pham-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Công nghiệp Thực phẩm Thành phố Hồ Chí Minh', 'engName': 'Ho Chi Minh City University of Food Industry (HUFI)', 'code': 'DCT', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học – Liên thông - Liên kết nước ngoài', 'address': ['140 Lê Trọng Tấn, P. Tây Thạnh, Q. Tân Phú, Tp. HCM'], 'phone': '(08)38161673 - (08)38163319', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d54535b527d55485b5413585948134b53">[email\xa0protected]</a>', 'website': 'http://hufi.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghiep-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghiep-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Công nghiệp Thành phố Hồ Chí Minh\xa0', 'engName': 'Industrial University of Ho Chi Minh City (IUH)', 'code': 'IUH', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Văn bằng 2 ', 'address': [' ', 'http://www.iuh.edu.vn/', 'http://www.hui.edu.vn/'], 'phone': '0283.8940.390', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bedad6ddd0fed7cbd690dbdacb90c8d0">[email\xa0protected]</a>', 'facebook': 'https://www.facebook.com/sviuh/', 'side': 'Nam'}}
+2021-02-25 00:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghe-dong-nai.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghe-dong-nai.html>
+{'url': {'vnName': '', 'engName': 'Dong Nai Technology University (DNTU)', 'code': 'DCD', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Liên thông ', 'address': ['Đường Nguyễn Khuyến, KP5, phường Trảng Dài, TP. Biên Hòa, tỉnh Đồng Nai'], 'phone': '\xa002513 996 473', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90f9fef6ffd0f4fee4e5bef5f4e5bee6fe">[email\xa0protected]</a>', 'website': 'https://dntu.edu.vn/', 'facebook': 'https://www.facebook.com/dntuedu/', 'side': 'Nam'}}
+2021-02-25 00:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghe-thong-tin-dh-quoc-gia-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghe-thong-tin-dh-quoc-gia-tphcm.html>
+{'url': {'vnName': 'Đại học Công nghệ Thông tin - ĐH Quốc gia TP.HCM', 'engName': 'University of Information Technology (VNUHCM - UIT)', 'code': 'QSC', 'levelEdu': 'Đại học - Sau Đại học - Đào tạo Quốc tế', 'address': ['KP 6, P. Linh Trung, Q. Thủ Đức, TP. Hồ Chí Minh'], 'phone': '(028) 372.52.002', 'email': '', 'side': 'Nam'}}
+2021-02-25 00:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghe-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghe-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': 'Đại học Công nghệ Thành phố Hồ Chí Minh', 'engName': 'Hochiminh City University of Technology (HUTECH)', 'code': 'DKC', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Văn bằng 2 - Liên kết quốc tế', 'address': ['Trụ sở chính: Số 475A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, TPHCM', 'Cơ sở 475B: 475B Điện Biên Phủ, P.25, Q.Bình Thạnh, TP.HCM', 'Cơ sở Ung Văn Khiêm: 31/36 Ung Văn Khiêm, P.25, Q.Bình Thạnh, TP.HCM'], 'phone': '(028) 5445 7777', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2652535f4348554f484e664e535243454e08434253085048">[email\xa0protected]</a>', 'website': 'https://www.hutech.edu.vn/', 'facebook': 'https://www.facebook.com/hutechuniversity/', 'side': 'Nam'}}
+2021-02-25 00:30:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghe-sai-gon.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghe-sai-gon.html>
+{'url': {'vnName': 'Đại học Công nghệ Sài Gòn', 'engName': 'Sai Gon Technology University (STU)', 'code': 'DSG', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông ', 'address': ['180 Cao Lỗ, phường 4, quận 8, TP Hồ Chí Minh'], 'phone': '+84 838.505.520', 'side': 'Nam'}}
+2021-02-25 00:30:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-cong-nghe-mien-dong.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-cong-nghe-mien-dong.html>
+{'url': {'vnName': '', 'engName': 'Mien Dong University of Technology (MUT)', 'code': 'DMD', 'type': 'Dân lập', 'levelEdu': 'Đại học - Liên thông - Văn bằng 2', 'address': [''], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ffbfaf6eae1fce6e1e7e2fafbcfe8e2eee6e3a1ece0e2">[email\xa0protected]</a>', 'website': 'http://www.mut.edu.vn/', 'facebook': 'https://www.facebook.com/mut.edu/', 'side': 'Nam'}}
+2021-02-25 00:30:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-canh-sat-nhan-dan.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-canh-sat-nhan-dan.html>
+{'url': {'vnName': '', 'code': 'CSS', 'type': 'Quân sự', 'levelEdu': 'Đại học - Sau đại học - Tại chức - Liên thông - Văn bằng 2', 'address': ['Cơ sở 1: 36 Nguyễn Hữu Thọ - Phường Tân Phong - Quận 7 - TP. Hồ Chí Minh. SĐT:\xa0(028)66860550\xa0', 'Cơ sở 2: 179A Kha Vạn Cân - Phường Linh Tây - Quận Thủ Đức - TP. Hồ Chí Minh. SĐT:\xa0(028)8960081'], 'email': '@pup.edu.vn', 'website': 'http://pup.edu.vn/', 'facebook': 'https://www.facebook.com/pup.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-can-tho.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-can-tho.html>
+{'url': {'vnName': '', 'engName': '', 'code': 'T', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2.', 'address': ['Khu II, đường 3/2, P. Xuân Khánh, Q. Ninh Kiều, TP. Cần Thơ'], 'phone': '0292.3832.663', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a7c3cfc4d3e7c4d3d289c2c3d289d1c9">[email\xa0protected]</a>', 'website': 'https://www.ctu.edu.vn/', 'facebook': 'https://www.facebook.com/CTUDHCT/', 'side': 'Nam'}}
+2021-02-25 00:30:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-binh-duong.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-binh-duong.html>
+{'url': {'vnName': '', 'engName': 'Binh Duong University (BDU)', 'code': 'DBD', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Liên thông - Tại chức - Văn bằng 2 - Liên kết Quốc tế', 'address': ['Cơ sở chính: ', 'Địa chỉ: Số 504 Đại lộ Bình Dương, P. Hiệp Thành, TP. Thủ Dầu Một, Bình Dương', 'SĐT: 0274 3822 058\xa0 – 3 820 833', 'Cơ sở Dĩ An:\xa0', 'Địa chỉ: 167 Lý Thường Kiệt, KP Thắng Lợi 2, P. Dĩ An, TX. Dĩ An, Bình Dương', 'Điện thoại: 0274 3 904 233 - 0988 885 580', 'Cơ sở Bến Cát:\xa0', 'Địa chỉ: KP 2, P. Mỹ Phước, TX. Bến Cát, Bình Dương', 'Điện thoại: 0274 3 595 958'], 'phone': '0274 3822 058\xa0 – 3 820 833', 'side': 'Nam'}}
+2021-02-25 00:30:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-bach-khoa-dhqg-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-bach-khoa-dhqg-tphcm.html>
+{'url': {'vnName': 'Đại học Bách Khoa - ĐHQG TP.HCM', 'engName': 'HCM University of Technology (VNUHCM-UT)', 'code': 'QSB', 'levelEdu': 'Đại học – Sau Đại học', 'address': ['268 Lý Thường Kiệt, phường 14, quận 10, TP.Hồ Chí Minh'], 'phone': '(028) 38654087', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="532436313e3220273621133b303e26277d3637267d253d">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:30:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-bac-lieu.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:30:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-bac-lieu.html>
+{'url': {'vnName': '', 'engName': 'Ba', 'code': 'DBL', 'type': 'Công lập', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2.', 'address': ['Số 178 đường Võ Thị Sáu, phường 8, TP Bạc Liêu, tỉnh Bạc Liêu'], 'phone': '0291.3821.107', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9df0fcf4f1ddfff1e8b3f8f9e8b3ebf3">[email\xa0protected]</a>', 'website': 'http://blu.edu.vn/', 'facebook': 'https://www.facebook.com/TruongDaiHocBacLieu/', 'side': 'Nam'}}
+2021-02-25 00:31:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-ba-ria-vung-tau.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-ba-ria-vung-tau.html>
+{'url': {'vnName': 'Đại học Bà Rịa - Vũng Tàu', 'engName': 'Ba Ria Vung Tau University (BVU)', 'code': 'BVU', 'type': 'Dân lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Văn bằng 2 - Hợp tác quốc tế', 'address': ['Cơ sở 1: 80 Trương Công Định, phường 3, Vũng Tàu', 'Cơ sở 2: 01 Trương Văn Bang, phường 7, Vũng Tàu', 'Cơ sở 3: 951 Bình Giã, phường 10, Vũng Tàu, Bà Rịa-Vũng Tàu.'], 'side': 'Nam'}}
+2021-02-25 00:31:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-an-ninh-nhan-dan.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/dai-hoc-an-ninh-nhan-dan.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 37, in parse_uni
+    inforarr = response.css("body > div.container > div.container-content > div.detail-left > div > ul:nth-child(2)").extract()[0]
+IndexError: list index out of range
+2021-02-25 00:31:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/dai-hoc-an-giang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/dai-hoc-an-giang.html>
+{'url': {'vnName': '', 'engName': 'An Giang University (AGU)', 'code': 'TAG', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Tại chức', 'address': ['Số 18, đường Ung Văn Khiêm, phường Đông Xuyên, thành phố Long Xuyên, tỉnh An Giang '], 'phone': '0296.6256.565', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6b1a3a4aba7b5b2a3b486a7a1b3e8a3a2b3e8b0a8">[email\xa0protected]</a>', 'website': 'http://www.agu.edu.vn/', 'facebook': 'https://www.facebook.com/AGUDHAG/', 'side': 'Nam'}}
+2021-02-25 00:31:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/truong-si-quan-ky-thuat-quan-su-dai-hoc-tran-dai-nghia.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/truong-si-quan-ky-thuat-quan-su-dai-hoc-tran-dai-nghia.html>
+{'url': {'vnName': 'Tên quân sự: Trường Sĩ quan Kỹ thuật quân sự (', 'engName': 'Tran Dai Nghia University (TDNU)', 'code': 'VPH (Hệ quân sự), ZPH (Hệ dân sự)', 'type': 'Quân sự', 'levelEdu': 'Đại học ', 'address': ['Cơ sở 1: số 189 Nguyễn Oanh, Phường 10, Quận Gò Vấp, Tp. Hồ Chí Minh', 'Cơ sở 2: Phường Long Bình, Biên Hòa, Đồng Nai'], 'phone': '(08) 3 8941336', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e48580898d8aa490808a91ca818091ca928a">[email\xa0protected]</a>', 'website': 'http://tdnu.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/phan-hieu-dai-hoc-quoc-gia-tp-ho-chi-minh-tai-tinh-ben-tre.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/phan-hieu-dai-hoc-quoc-gia-tp-ho-chi-minh-tai-tinh-ben-tre.html>
+{'url': {'vnName': 'Phân hiệu Đại học Quốc gia TP Hồ Chí Minh tại tỉnh Bến Tre', 'code': 'QSB', 'levelEdu': 'Đại học - Sau đại học', 'address': ['99A, Quốc lộ 60, KP1, P. Phú Tân, Tp Bến Tre '], 'phone': '02753 818 000 ', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8c8d0daddd6cccaddf8ced6cdd0dbd596dddccd96ced6">[email\xa0protected]</a> ', 'website': 'http://vnuhcm-cbt.edu.vn/', 'facebook': 'https://www.facebook.com/PHDHQGTPHCMBENTRE', 'side': 'Nam'}}
+2021-02-25 00:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/phan-hieu-dai-hoc-nong-lam-tp-hcm-tai-ninh-thuan.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/phan-hieu-dai-hoc-nong-lam-tp-hcm-tai-ninh-thuan.html>
+{'url': {'vnName': 'Phân hiệu Đại học Nông Lâm TP. HCM tại Ninh Thuận', 'code': 'NLS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Tại chức - Văn bằng 2', 'address': ['Số 8 đường Yên Ninh, thị trấn Khánh Hải, huyện Ninh Hải, tỉnh Ninh Thuận'], 'phone': '0259.2472.252 - 0259.3500.579', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="691901071d29010a041c080f470c0d1c471f07">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82f2f4eaebe7ecc2eae1eff7">[email\xa0protected]</a>af.edu.vn', 'website': 'http://phnt.hcmuaf.edu.vn/', 'facebook': 'https://www.facebook.com/NongLamUniversityInNinhThuan/', 'side': 'Nam'}}
+2021-02-25 00:31:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/phan-hieu-dai-hoc-giao-thong-van-tai-tai-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/phan-hieu-dai-hoc-giao-thong-van-tai-tai-tphcm.html>
+{'url': {'vnName': 'Phân hiệu Đại học Giao thông vận tải tại TP.HCM', 'engName': 'University of Transport and Communications Campus Ho Chi Minh (UTC2)', 'code': 'GSA', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Tại chức - Văn bằng 2 - Liên thông - Liên kết Quốc tế ', 'address': ['450-451 Lê Văn Việt, phường Tăng Nhơn Phú A, quận 9, TP. Hồ Chí Minh'], 'phone': '(028).3896.6798 - (028).7300.1155', 'email': '', 'side': 'Nam'}}
+2021-02-25 00:31:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/phan-hieu-dai-hoc-can-tho-tai-hau-giang.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/phan-hieu-dai-hoc-can-tho-tai-hau-giang.html>
+{'url': {'vnName': '', 'engName': '', 'code': 'T', 'type': 'Công lập', 'levelEdu': 'Đại học ', 'address': ['Khu Hòa An - ĐHCT, số 544, quốc lộ 61, ấp Hòa Đức, xã Hòa An, huyện Phụng Hiệp, tỉnh Hậu Giang'], 'phone': '(84) (293) 351 1111 - (84) (293) 222 9079', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b001b1f051f2b081f1e450e0f1e451d05">[email\xa0protected]</a>', 'website': 'https://www.ctu.edu.vn/', 'facebook': 'https://www.facebook.com/crd.ctu/', 'side': 'Nam'}}
+2021-02-25 00:31:20 [scrapy.extensions.logstats] INFO: Crawled 93 pages (at 22 pages/min), scraped 85 items (at 21 items/min)
+2021-02-25 00:31:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/phan-hieu-dai-hoc-binh-duong-tai-ca-mau.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/phan-hieu-dai-hoc-binh-duong-tai-ca-mau.html>
+{'url': {'vnName': 'Phân hiệu Đại học Bình Dương tại Cà Mau', 'engName': 'Binh Duong University (BDU)', 'code': 'DBD', 'type': 'Dân lập ', 'levelEdu': 'Đại học - Sau đại học - Liên thông - Văn bằng 2 - Đào tạo ngắn hạn', 'address': ['Số 3, Đường số 6, Khu Dự án Đông Bắc, P5, TP. Cà Mau, tỉnh Cà Mau'], 'phone': '\xa00290.3997.777-0290.3552.177 ', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5226272b373c213b3c3a7c313f123036277c3736277c243c">[email\xa0protected]</a>', 'website': 'http://camau.bdu.edu.vn/', 'facebook': 'https://www.facebook.com/daihocbinhduongcamau', 'side': 'Nam'}}
+2021-02-25 00:31:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/phan-hieu-truong-dai-hoc-lam-nghiep-tai-tinh-dong-nai.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/phan-hieu-truong-dai-hoc-lam-nghiep-tai-tinh-dong-nai.html>
+{'url': {'vnName': '', 'engName': 'Vietnam National University of Forestry at Dong Nai (VNUF)', 'code': 'LNS', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Liên thông - Tại chức', 'address': ['Thị trấn Trảng Bom, huyện Trảng Bom, tỉnh Đồng Nai'], 'phone': '\xa00251.3866.242 - 02516.578.999 - 02516.508.777', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6b6a667a716c7671775f69796a2d317a7b6a316971">[email\xa0protected]</a>', 'website': 'https://vnuf2.edu.vn/', 'facebook': 'https://www.facebook.com/PhanhieuVNUF/', 'side': 'Nam'}}
+2021-02-25 00:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/nhac-vien-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/nhac-vien-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': '', 'engName': 'Ho Chi Minh City Conservatoire (HCMCONS)', 'code': 'NVS', 'type': 'Công lập', 'levelEdu': 'Trung cấp - Đại học - Sau Đại học - Tại chức - Văn bằng 2', 'address': ['112 Nguyễn Du, Quận 1, Tp.Hồ Chí Minh'], 'phone': '(84 8) 38 225 841', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f7819699839f82999f9694819e9299b79f949a94989984d98199">[email\xa0protected]</a>', 'website': 'http://www.hcmcons.vn/', 'side': 'Nam'}}
+2021-02-25 00:31:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/khoa-y-dh-quoc-gia-tphcm.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/khoa-y-dh-quoc-gia-tphcm.html>
+{'url': {'vnName': 'Khoa Y - ĐHQG TP.HCM', 'engName': 'School of Medicine', 'code': 'QSY', 'levelEdu': 'Đại học', 'address': ['Nhà Điều hành Đại học Quốc gia TP.HCM, P. Linh Trung, Q.Thủ Đức, TP.HCM '], 'phone': '028.372.42.160', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2d6c6edd1c6c1c4f2dfd7d6c4dcc79cd7d6c79cc4dc">[email\xa0protected]</a>', 'side': 'Nam'}}
+2021-02-25 00:31:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/hoc-vien-tu-phap-co-so-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/hoc-vien-tu-phap-co-so-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': '', 'code': 'HVC', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Tại chức ', 'address': ['Số 821 Kha Vạn Cân, Phường Linh Tây, Quận Thủ Đức, TP.HCM'], 'phone': '028.2253.9104', 'website': 'http://hocvientuphap.edu.vn/cosotphcm/Pages/co-so-tphcm.aspx', 'facebook': 'https://www.facebook.com/hocvientuphap.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:31:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/hoc-vien-thanh-thieu-nien-viet-nam-co-so-phia-nam.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/hoc-vien-thanh-thieu-nien-viet-nam-co-so-phia-nam.html>
+{'url': {'vnName': '', 'engName': 'Vietnam Young Academy (VYA)', 'code': 'HTN', 'type': 'Công lập', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học - Sau Đại học - Tại chức ', 'address': ['261 Hoàng Hữu Nam, P. Tân Phú, Q.9, TP.HCM'], 'phone': '028 38966914 - 028 54480712', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcacaab1b2f2b9b8a99cbbb1bdb5b0f2bfb3b1">[email\xa0protected]</a>', 'website': 'http://pvmn.edu.vn/', 'facebook': 'https://www.facebook.com/pvmnonline/', 'side': 'Nam'}}
+2021-02-25 00:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/hoc-vien-ky-thuat-mat-ma-co-so-phia-nam.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/hoc-vien-ky-thuat-mat-ma-co-so-phia-nam.html>
+{'url': {'vnName': '', 'engName': 'Academy of Cryptography techniques (ACTVN)', 'code': 'KMA', 'type': 'Quân sự', 'levelEdu': 'Đại học - Sau Đại học ', 'address': ['Số 17A Cộng Hòa, Phường 4, Quận Tân Bình, Thành phố Hồ Chí Minh'], 'phone': '(028).6293.9206', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89e8eafdffe7c9e6fcfde5e6e6e2a7eae6e4">[email\xa0protected]</a>', 'website': 'http://actvn.edu.vn/', 'facebook': 'https://www.facebook.com/hocvienkythuatmatma/', 'side': 'Nam'}}
+2021-02-25 00:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/hoc-vien-hang-khong-viet-nam.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/hoc-vien-hang-khong-viet-nam.html>
+{'url': {'vnName': '', 'engName': 'VietNam Aviation Academy (VAA)', 'code': 'HHK', 'type': 'Công lập', 'levelEdu': 'Trung cấp - Cao đẳng - Đại học - Sau Đại học - Tại chức ', 'address': ['Cơ sở 1: 104 Nguyễn Văn Trỗi, Phường 8, Quận Phú Nhuận, Tp.Hồ Chí Minh', 'Cơ sở 2: F100 - 18A/1 Cộng Hòa, Phường 4, Quận Tân Bình, Tp.Hồ Chí Minh', 'Cơ sở 3: 243 Nguyễn Tất Thành, Thành phố Cam Ranh (Sân bay Cam Ranh, Tỉnh Khánh Hòa)'], 'phone': '0911.959.505 - (028).3842.2199', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="137a7d757c536572723d7677663d657d">[email\xa0protected]</a>', 'website': 'http://www.vaa.edu.vn/', 'facebook': 'https://www.facebook.com/hvhkvn/', 'side': 'Nam'}}
+2021-02-25 00:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/hoc-vien-cong-nghe-buu-chinh-vien-thong-co-so-phia-nam.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/hoc-vien-cong-nghe-buu-chinh-vien-thong-co-so-phia-nam.html>
+{'url': {'vnName': 'Học viện Công nghệ Bưu chính Viễn thông (Cơ sở phía Nam)', 'engName': 'Posts and Telecommunications Institute of Technology (PTIT)', 'code': 'BVS', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Đại học - Sau Đại học - Tại chức - Liên thông - Văn bằng 2', 'address': ['Trụ sở chính: Số 11 Nguyễn Đình Chiểu, Phường Đa Kao, Quận 1, TP. Hồ Chí Minh', 'Cơ sở Quận 9: Đường Man Thiện, Phường Hiệp Phú, Quận 9, TP. Hồ Chí Minh '], 'phone': '(028) 38.295.258', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ae2fce8e9fcfee2e9e7cafafee3fee2e9e7a4efeeffa4fce4">[email\xa0protected]</a>', 'website': 'http://hcm.ptit.edu.vn', 'facebook': 'https://www.facebook.com/ptithcm.edu.vn/', 'side': 'Nam'}}
+2021-02-25 00:31:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/hoc-vien-can-bo-thanh-pho-ho-chi-minh.html> (referer: https://tuyensinhso.vn/khu-vuc/khu-vuc-mien-nam-c11802.html)
+2021-02-25 00:31:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/hoc-vien-can-bo-thanh-pho-ho-chi-minh.html>
+{'url': {'vnName': '', 'engName': 'Ho Chi Minh Cadre Academy (HCA)', 'code': 'HVC', 'type': 'Công lập', 'levelEdu': 'Đại học - Sau Đại học - Tại chức ', 'address': ['\xa0324 Chu Văn An, phường 12, quận Bình Thạnh, TP Hồ Chí Minh'], 'phone': '028.2243.7830', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="660e0905100f030805070804092612160e050b48010910481008">[email\xa0protected]</a>', 'website': 'http://www.hocviencanbo.hochiminhcity.gov.vn/', 'facebook': 'https://www.facebook.com/tuvantuyensinhhca/', 'side': 'Nam'}}
+2021-02-25 00:31:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-02-25 00:31:45 [asyncio] DEBUG: Using proactor: IocpProactor
+2021-02-25 00:31:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 50967,
+ 'downloader/request_count': 103,
+ 'downloader/request_method_count/GET': 103,
+ 'downloader/response_bytes': 1472940,
+ 'downloader/response_count': 103,
+ 'downloader/response_status_count/200': 103,
+ 'elapsed_time_seconds': 265.74532,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 2, 24, 17, 31, 45, 766329),
+ 'item_scraped_count': 95,
+ 'log_count/DEBUG': 199,
+ 'log_count/ERROR': 6,
+ 'log_count/INFO': 14,
+ 'request_depth_max': 1,
+ 'response_received_count': 103,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 102,
+ 'scheduler/dequeued/memory': 102,
+ 'scheduler/enqueued': 102,
+ 'scheduler/enqueued/memory': 102,
+ 'spider_exceptions/AttributeError': 4,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2021, 2, 24, 17, 27, 20, 21009)}
+2021-02-25 00:31:45 [scrapy.core.engine] INFO: Spider closed (finished)

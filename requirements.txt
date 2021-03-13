@@ -1,0 +1,13 @@
+lxml
+parsel
+w3lib
+twisted
+cryptography
+pyOpenSSL
+scrapy
+scrapyd
+python-scrapyd-api
+pywin32
+mysqlclient
+django
+scrapy-selenium

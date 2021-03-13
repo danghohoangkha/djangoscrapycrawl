@@ -1,0 +1,380 @@
+2021-02-25 00:00:49 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scrapy_app)
+2021-02-25 00:00:49 [scrapy.utils.log] INFO: Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 3.3.1, Platform Windows-10-10.0.17763-SP0
+2021-02-25 00:00:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-02-25 00:00:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'CONCURRENT_REQUESTS': 1,
+ 'LOG_FILE': 'logs\\default\\icrawler\\d6ae6b0c76c111eb9dc79840bb3a3f7e.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, '
+               'like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+2021-02-25 00:00:49 [scrapy.extensions.telnet] INFO: Telnet Password: 01a31b61602444f1
+2021-02-25 00:00:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-02-25 00:00:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_scrapingbee.ScrapingBeeMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-02-25 00:00:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-02-25 00:00:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2021-02-25 00:00:49 [scrapy.core.engine] INFO: Spider opened
+2021-02-25 00:00:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-02-25 00:00:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-02-25 00:00:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/robots.txt> (referer: None)
+2021-02-25 00:00:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html> (referer: None)
+2021-02-25 00:00:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-ky-thuat-my-nghe-viet-nam.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:00:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-ky-thuat-my-nghe-viet-nam.html>
+{'url': {'vnName': 'Cao đẳng Kỹ thuật - Mỹ nghệ Việt Nam', 'engName': 'Vietnam Vocational College of Technology - Handicraft (VCTH)', 'code': 'CDT0110', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Xã Dương Xá, huyện Gia Lâm, TP. Hà Nội'], 'phone': '0243 678 0857', 'email': '<a href="/cdn-cgi/l/email-protection#167477786264636f7378627e7978717b7856717b777f7a3875797b" target="_blank" rel="noopener"><span class="__cf_email__" data-cfemail="2042414e54525559454e54484f4e474d4e60474d41494c0e434f4d">[email\xa0protected]', 'side': 'Bac'}}
+2021-02-25 00:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-dai-viet.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:00:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/cao-dang-dai-viet.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:01:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-duong-sat-co-so-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-duong-sat-co-so-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Đường sắt (Cơ sở Hà Nội)', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp', 'address': ['Số 2, ngõ 167, Gia Quất, Thượng Thanh, Long Biên, Hà Nội'], 'phone': '0243.8710.384', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4122342e2f2637353735373501262c20282d6f222e2c">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-dien-tu-dien-lanh-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-dien-tu-dien-lanh-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Điện tử - Điện lạnh Hà Nội', 'engName': '', 'code': 'CLH', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['Số 10, đường Nguyễn Văn Huyên, phường Dịch Vọng, quận Cầu Giấy, thành phố Hà Nội'], 'phone': '(024)37673896 - 0243.8349644', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b1d0a051f031e2b0f1f0f07450e0f1e451d05">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cebabbb7aba0bda7a0a68eaabaaaa2e0abaabbe0b8a0">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-dien-luc-mien-bac.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-dien-luc-mien-bac.html>
+{'url': {'vnName': 'Cao đẳng Điện lực miền Bắc', 'code': '', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp', 'address': ['Xã Tân Dân, huyện Sóc Sơn, TP. Hà Nội'], 'phone': '0422.175.586', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e7838688938688a789829784c9828392c99189">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-te-dang-van-ngu.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-te-dang-van-ngu.html>
+{'url': {'vnName': 'Cao đẳng Y tế Đặng Văn Ngữ', 'engName': 'Dang Van Ngu Medical College', 'code': 'YT02', 'type': 'Công lập', 'levelEdu': 'Cao đẳng', 'address': ['Số 36 Trung Văn, Phường Trung Văn, Quận Nam Từ Liêm, Hà Nội'], 'phone': '0243 854 2351 - 0243 553 1254', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="413533342e2f26383525372f01262c20282d6f222e2c">[email\xa0protected]</a>; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83f7f6fae6edf0eaedebc3faf7e7f5edade6e7f6adf5ed">[email\xa0protected]</a>; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8febeee1e8f9eee1e1e8facff6fbebf9e1a1eaebfaa1f9e1">[email\xa0protected]</a>', 'website': 'http://ytdvn.edu.vn/', 'facebook': 'https://www.facebook.com/ytdvn.edu.vn/', 'side': 'Bac'}}
+2021-02-25 00:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-te-ha-dong.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-te-ha-dong.html>
+{'url': {'vnName': 'Cao đẳng Y tế Hà Đông', 'engName': 'Ha Dong Medical College', 'code': 'CDD0135', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Liên thông - Tại chức - Trung cấp - Văn bằng 2', 'address': ['Số 39 Nguyễn Viết Xuân, Quang Trung, Hà Đông, Hà Nội'], 'phone': '02463.250.345', 'email': 'info<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f8b89b9c818c90999c97969fd69d9c8dd68e96">[email\xa0protected]</a>', 'website': 'http://www.cdythadong.edu.vn/', 'facebook': 'https://www.facebook.com/cdythadong.edu/', 'side': 'Bac'}}
+2021-02-25 00:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-te-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-te-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Y tế Hà Nội', 'engName': 'Hanoi Medical College (HMC)', 'code': 'CDD0134', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông - Tại chức - Văn bằng 2', 'address': ['Cơ sở I: Số 35 P. Đoàn Thị Điểm - Q. Đống Đa - TP. Hà Nội', 'Cơ sở II: Số 103 P. Phúc Xá - Q. Ba Đình - TP. Hà Nội'], 'phone': '(84) 04. 373 26303/ 04. 384 52814 - 221.241', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1ada8a4afa9a481a9aca2efa4a5b4efb7af">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:01:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-te-bach-mai.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-te-bach-mai.html>
+{'url': {'vnName': 'Cao đẳng Y tế Bạch Mai', 'engName': 'Bach Mai Medical College (BMMC)', 'code': 'CBM', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Liên thông - Tại chức', 'address': ['78 Đường Giải Phóng, Phương Mai, Đống Đa, Hà Nội'], 'phone': '(84) 0243868 5651', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0467656b60656a637d70616665676c69656d446369656d682a676b69">[email\xa0protected]</a>', 'website': 'http://bmmc.edu.vn/vi/trang-chu.h1.bic', 'facebook': 'https://www.facebook.com/Caodangybachmai/', 'side': 'Bac'}}
+2021-02-25 00:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-khoa-pham-ngoc-thach.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-khoa-pham-ngoc-thach.html>
+{'url': {'vnName': 'Cao đẳng Y Khoa Phạm Ngọc Thạch', 'code': 'CBK', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Cơ sở đào tạo tại Hà Nội:', 'Cơ sở đào tạo tại TP. Hồ Chí Minh:\xa0', 'Cơ sở Hà Nội:\xa0', 'https://caodangykhoaphamngocthach.com/', 'Cơ sở TP.HCM:\xa0', 'https://caodangyduochochiminh.vn/'], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="67040608030609001e0c0f0806170f060a09000804130f06040f27000a060e0b4904080a">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:01:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-duoc-pasteur.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-duoc-pasteur.html>
+{'url': {'vnName': 'Cao đẳng Y Dược Pasteur', 'engName': '', 'code': 'CDD1301', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Trung cấp - Văn bằng 2 - Liên thông ', 'address': ['49 Thái Thịnh, Đống Đa, Hà Nội'], 'phone': '024.85.895.895 - 0948.895.895', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96e2e4e3f9f8f1f5f7f9f2f7f8f1eff2e3f9f5e6f7e5e2f3e3e4d6f1fbf7fffab8">[email\xa0protected]</a>com', 'side': 'Bac'}}
+2021-02-25 00:01:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-duoc-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-y-duoc-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Y Dược Hà Nội', 'code': 'CDD1919', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Liên thông - Văn bằng 2', 'address': [''], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93e7e6eaf6fde0fafdfbbdeaf7fbfdd3f4fef2faffbdf0fcfe">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-y-duoc-asean.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/cao-dang-y-duoc-asean.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:01:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-xay-dung-so-1.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-xay-dung-so-1.html>
+{'url': {'vnName': 'Cao đẳng Xây dựng số 1', 'engName': 'Construction Technical College No 1 (CTC1)', 'code': 'CDT0129', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Đường Trung Văn - phường Trung Văn - quận Nam Từ Liêm - TP. Hà Nội'], 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b1d2c5d280f1d2c5d2809fd4d5c49fc7df">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ef9f878081888b8e809b8e808c9b8cdeaf88828e8683c18c8082">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-xay-dung-cong-trinh-do-thi-co-so-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-xay-dung-cong-trinh-do-thi-co-so-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Xây dựng Công trình Đô thị (Cơ sở Hà Nội)', 'engName': 'College of Urban Works Construction (CUWC)', 'code': 'CDT0128', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['xã Yên Thường, huyện Gia Lâm, Hà Nội'], 'phone': '(024).3.827.1305 - (024).3.8780401 - (024).3.877.0034', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="30444549555e43595e581e5345475370575d51595c1e535f5d">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-truyen-hinh-viet-nam.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-truyen-hinh-viet-nam.html>
+{'url': {'vnName': 'Cao đẳng Truyền hình Việt Nam', 'code': 'CDT0131', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông - Văn bằng 2', 'address': ['Số 137 Trần phú -Thị trấn Thường Tín - Huyện Thường Tín - Thành phố Hà Nội.'], 'phone': '024.33853.048 ', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab9aeac9aacaeacf4acb4">[email\xa0protected]</a>\xa0- <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5024383f3e3724393e24267e33242610373d31393c7e333f3d">[email\xa0protected]</a> ', 'website': 'http://ctv.vtv.vn/', 'facebook': 'https://www.facebook.com/cdth.vtv/', 'side': 'Bac'}}
+2021-02-25 00:01:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-thuc-hanh-fpt-co-so-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-thuc-hanh-fpt-co-so-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Thực hành FPT (Cơ sở Hà Nội)', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng', 'address': ['Tòa nhà FPT Polytechnic (nhà H), Hàm Nghi, Mỹ Đình, Nam Từ Liêm, Hà Nội'], 'phone': '0246.6840.713 - 0246.6841.713 - 0248.5820.808', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3d0d2dcd7d2ddd4f3d5c3c79dd6d7c69dc5dd">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-su-pham-trung-uong.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-su-pham-trung-uong.html>
+{'url': {'vnName': 'Cao đẳng Sư phạm Trung ương', 'engName': 'National College For Education', 'code': 'CM1', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['387 Hoàng Quốc Việt - Cầu Giấy - Hà Nội'], 'phone': '(04) 37564230 - (04) 37914850', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b0a0f0602052b080f181b1f1c450e0f1e451d05">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9a7aaac89aaadbab9bdbee7acadbce7bfa7">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f7838582989990949384878380b7909a969e9bd994989a">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-su-pham-ha-tay.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-su-pham-ha-tay.html>
+{'url': {'vnName': 'Cao đẳng Sư phạm Hà Tây', 'engName': 'Ha Tay Teacher Training College ', 'code': 'C20', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Tại chức - Liên thông', 'address': ['Thị trấn Thường Tín, huyện Thường Tín, Hà Nội'], 'phone': '04.6670 8742', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d3babdb5bc93b0b7a0a3bba7bbbdfdb6b7a6fda5bd">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-quoc-te-pegasus.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-quoc-te-pegasus.html>
+{'url': {'vnName': 'Cao đẳng Quốc tế Pegasus', 'engName': 'Pegasus International College', 'code': 'CDD0411', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng', 'address': ['SĐT: 024 7304 1555', 'Email: ', '[email\xa0protected]', 'SĐT: 0236 7301 555', 'Email: ', '[email\xa0protected]'], 'phone': '024 7304 1555', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f89d96898d918a81b8889d9f998b8d8bd69d9c8dd68e96">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-quoc-te-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-quoc-te-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Quốc tế Hà Nội', 'engName': 'Hanoi International College (HIC)', 'code': '', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông - Văn bằng 2', 'address': ['Cơ sở 1: Đông Yên, Quốc Oai, Hà Nội;', 'Cơ sở 2: Số 1, đường Trịnh Văn Bô - Phương Canh - Nam Từ Liêm - Hà Nội.'], 'phone': '0243.9913.113 - 0981.257.178 - 0946.359.889', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3dbdad0d0d2c6d4dad2caf3">[email\xa0protected]</a>gmail.com', 'side': 'Bac'}}
+2021-02-25 00:01:49 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 23 pages/min), scraped 19 items (at 19 items/min)
+2021-02-25 00:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-quoc-te-btec-fpt-co-so-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-quoc-te-btec-fpt-co-so-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Quốc tế BTEC FPT (Cơ sở Hà Nội)', 'code': 'BTECFPT', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng', 'address': ['Tầng 2, Tòa nhà Detech II, 107 Nguyễn Phong Sắc, Quận Cầu Giấy, Hà Nội '], 'phone': '0981.090.513 -\xa00981 090 513', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f7d6b7a7c3177715f796f6b317a7b6a316971">[email\xa0protected]</a>\xa0', 'side': 'Bac'}}
+2021-02-25 00:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-phu-chau.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-phu-chau.html>
+{'url': {'vnName': 'Cao đẳng Phú Châu', 'engName': 'Phu Chau College (PCC)', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Số 99, Ngụy Như, Kon Tum, Thanh Xuân, Hà Nội'], 'phone': '0242.2415.804 - 0903.223.101', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e58c8b838aa5958686cb808190cb938b">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:01:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-phat-thanh-truyen-hinh-i.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-phat-thanh-truyen-hinh-i.html>
+{'url': {'vnName': 'Cao đẳng Phát thanh - Truyền hình I ', 'engName': '', 'code': 'CDT2402', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông - Văn bằng 2', 'address': [''], 'phone': '0246.656.4155 - 02263.847.679', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3c6c7d6e3d5ccd58dd5cd">[email\xa0protected]</a>', 'website': 'http://edu.vov.vn/', 'facebook': 'https://www.facebook.com/VOVedu.vn/', 'side': 'Bac'}}
+2021-02-25 00:01:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nong-nghiep-va-phat-trien-nong-thon-bac-bo.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:01:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nong-nghiep-va-phat-trien-nong-thon-bac-bo.html>
+{'url': {'vnName': 'Cao đẳng Nông nghiệp và Phát triển nông thôn Bắc Bộ', 'engName': 'The North Vietnam College of Agriculture and Rural Development (VCARD)', 'code': 'CDT0127', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['Km 36, thị trấn Xuân Mai, huyện Chương Mỹ, Hà Nội'], 'phone': '024 33 840 320 - 024 33 840 424', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e98a88868d88878e8b888a8b86a98e84888085c78a8684">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-noi-vu-ha-noi-thuoc-dai-hoc-noi-vu-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-noi-vu-ha-noi-thuoc-dai-hoc-noi-vu-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Nội vụ Hà Nội (Thuộc Đại học Nội vụ Hà Nội)', 'type': 'Công lập', 'levelEdu': 'Cao đẳng', 'address': ['Số 36 đường Xuân La, Phường Xuân La, Tây Hồ, Hà Nội'], 'phone': '(04) 37 532 864', 'email': '', 'side': 'Bac'}}
+2021-02-25 00:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-viet-nam-han-quoc-thanh-pho-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-viet-nam-han-quoc-thanh-pho-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng nghề Việt Nam - Hàn Quốc thành phố Hà Nội', 'engName': 'Vietnam Vocational College Korea Ha Noi City', 'code': 'CDD0126', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Đường Uy Nỗ, thị trấn Đông Anh, Đông Anh, Hà Nội'], 'phone': '0439.690.133', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9eeaecebf1f0f9defdfae8f7fbeaf6fff0f6fff0f1f7b0fbfaebb0e8f0">[email\xa0protected]</a>', 'website': 'https://cdviethanhanoi.edu.vn/', 'side': 'Bac'}}
+2021-02-25 00:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-tran-hung-dao.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-tran-hung-dao.html>
+{'url': {'vnName': 'Cao đẳng nghề Trần Hưng Đạo', 'engName': 'Tran Hung Dao Voctional College', 'code': 'CĐĐ0109', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp', 'address': ['Số 7, đường Mỹ Đình, phường Mỹ Đình 2, quận Nam Từ Liêm, TP. Hà Nội'], 'phone': '0243.7950.119 - 0982.944.477', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0b4b5b9a5aeb3a9aea880a3a1afa4a1aea7b4b2a1aea8b5aea7a4a1afeeb6ae">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-thuat-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-thuat-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Nghệ thuật Hà Nội', 'engName': 'Hanoi College of Art', 'code': 'CDD0136', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Số 7 Hai Bà Trưng, Hoàn Kiếm, Hà Nội'], 'phone': '043.8251808', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e18f8689849589948095a18f868984958994809589808f8e88cf848594cf978f">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-long-bien.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-long-bien.html>
+{'url': {'vnName': 'Cao đẳng nghề Long Biên', 'engName': 'Long Bien Vocational College', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['765A Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà Nội'], 'phone': '0436.740.833', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e38f8c8d84818a868d808c8f8f868486a38f8180cd868796cd958d">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-ky-thuat-va-nghiep-vu-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-ky-thuat-va-nghiep-vu-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng nghề Kỹ thuật và Nghiệp vụ Hà Nội', 'engName': 'Hanoi College for Technical and Professional Skills Training', 'code': 'CDT0124', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['169 Nguyễn Ngọc Vũ, Trung Hòa, Cầu Giấy, Hà Nội'], 'phone': '0243.8585.141', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cf5f2faf3dcf4fde8f9fff4efb2f9f8e9b2eaf2">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-ky-thuat-cong-nghe.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-ky-thuat-cong-nghe.html>
+{'url': {'vnName': 'Trường Cao đẳng Nghề Kỹ thuật Công nghệ', 'code': 'CDT0104', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Tổ 27, Thị trấn Đông Anh, Huyện Đông Anh, Thành phố Hà Nội'], 'phone': '024.625.36127 - 0243.882.1104', 'email': '', 'side': 'Bac'}}
+2021-02-25 00:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-cong-thuong-viet-nam-co-so-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-cong-thuong-viet-nam-co-so-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng nghề Công thương Việt Nam (Cơ sở Hà Nội)', 'engName': 'Vietnam Industrial and Commercial College', 'code': 'CDD1204', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Khu đô thị mới Nghĩa Đô - Ngõ 106 Hoàng Quốc Việt- Cổ Nhuế 1 - Bắc Từ Liêm - Hà Nội.\xa0', 'SĐT: 0242.2475.888 - 0986.916.699 - 0985.816.136', 'Đường Lê Đức Thọ - Mỹ Đình 2 - Nam Từ Liêm - TP. Hà Nội.\xa0', 'SĐT: 0242.2451.999 - 0969.961.111 - 0942.345.115'], 'phone': '0242.2475.888 - 0986.916.699 - 0985.816.136', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d8bbbcb6bbb7b6bfacb0adb7b6bfaeb698bfb5b9b1b4f6bbb7b5">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-cong-nghiep-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-cong-nghiep-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng nghề Công nghiệp Hà Nội', 'code': 'CDD0101', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['131 Thái Thịnh, Đống Đa, TP. Hà Nội'], 'phone': '0438.532.033', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7beb9b1b897bfb9bea1b4f9b2b3a2f9a1b9">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-cong-nghe-cao-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-cong-nghe-cao-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng nghề Công nghệ cao Hà Nội', 'engName': 'Hanoi Vocational College of High Technology (HHT)', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Phường Tây Mỗ, quận Nam Từ Liêm, TP. Hà Nội'], 'phone': '02437653568', 'email': 'tuyensinh.hht.edu.vn', 'side': 'Bac'}}
+2021-02-25 00:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-nghe-bach-khoa-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-nghe-bach-khoa-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng nghề Bách khoa Hà Nội', 'engName': 'Ha Noi Vocational College of Technology', 'levelEdu': 'Cao đẳng', 'address': ['Số 92A, Lê Thanh Nghị, Hai Bà Trưng, Hà Nội', 'Số 15A, Tạ Quang Bửu, Hai Bà Trưng, Hà Nội'], 'phone': '0243.6230.209 - 0243.8682.904 - 0243.8682.917', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f3c30312b3e3c2b1f373e3c2b3a3c37713a3b2a712931">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-mua-viet-nam.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-mua-viet-nam.html>
+{'url': {'vnName': 'Cao đẳng Múa Việt Nam', 'engName': 'Vietnam Dance College', 'code': 'CDT0133', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Khu Văn hoá Nghệ thuật, Đường Hồ Tùng Mậu, Phường Mai Dịch, Quận Cầu Giấy, Thành Phố Hà Nội'], 'phone': '043.7643546', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cbaaafa6a2a58ba8afa6beaabda5e5aeafbee5bda5">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-ky-thuat-trang-thiet-bi-y-te.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-ky-thuat-trang-thiet-bi-y-te.html>
+{'url': {'vnName': 'Cao đẳng Kỹ thuật Trang thiết bị Y tế', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông - Tại chức', 'address': ['Số 1 ngõ 89, Lương Định Của, Đống Đa, Hà Nội'], 'phone': '0243.5760.370', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5c5dddadbd2d1d4dac1d4dad6d1dec1c1d7ccc1f5d2d8d4dcd99bd6dad8">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-kinh-te-ky-thuat-trung-uong.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-kinh-te-ky-thuat-trung-uong.html>
+{'url': {'vnName': 'Cao đẳng Kinh tế - Kỹ thuật Trung ương', 'engName': 'National Economics &amp; Technical College (NETC)', 'code': 'CTW', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['Dương Xá - Gia Lâm - Hà Nội'], 'phone': '(844) 38276342', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f3f272e222b3a2c3e3a2e2128273b0f28222e2623612c2022">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-kinh-te-cong-nghiep-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-kinh-te-cong-nghiep-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Kinh tế Công nghiệp Hà Nội', 'engName': 'Hanoi College of Industrial Economics (HIEC)', 'code': 'CCK', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['Trụ sở chính: 143 Nguyễn Ngọc Vũ - Trung Hòa - Cầu Giấy - Hà Nội ', 'Cơ sở 2: 106 Tả Thanh Oai - Thanh Trì - Hà Nội'], 'phone': '0243.556.2960 -\xa00869969396', 'email': '', 'side': 'Bac'}}
+2021-02-25 00:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-kinh-te-cong-nghe-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-kinh-te-cong-nghe-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Kinh tế Công nghệ Hà Nội', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Văn phòng: ', 'Số 202 Hồ Tùng Mậu, Bắc Từ Liêm, Hà Nội', 'Trụ sở chính: Đường Văn Tiến Dũng, Phường Minh Khai, Bắc Từ Liêm, Hà\xa0Nội'], 'phone': '(04) 3.780.0225', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9af2fbeefff9f5b4fffeefdafdf7fbf3f6b4f9f5f7">[email\xa0protected]</a>', 'website': 'https://ktcnhn.edu.vn/', 'side': 'Bac'}}
+2021-02-25 00:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-kinh-te-ky-thuat-thuong-mai.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-kinh-te-ky-thuat-thuong-mai.html>
+{'url': {'vnName': 'Cao đẳng Kinh tế - Kỹ thuật Thương mại', 'engName': 'College of Trade, Economics and Techniques (CTET)', 'code': 'CDT0142', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Phường Phú Lãm, quận Hà Đông, thành phố Hà Nội'], 'phone': '02433.531.324 - 02433.532.091 - 0984.7171.75', 'website': 'http://ctet.edu.vn/', 'facebook': 'https://www.facebook.com/www.ctet.edu.vn/', 'side': 'Bac'}}
+2021-02-25 00:02:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-kinh-te-ky-thuat-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-kinh-te-ky-thuat-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Kinh tế - Kỹ thuật Hà Nội', 'engName': 'Hanoi College of Economics and Technology (HCET)', 'code': 'CKN', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông', 'address': ['Số 247, đường Vũ Tông Phan, phường Khương Trung, quận Thanh Xuân, TP. Hà Nội'], 'phone': '024 6253 2747 ', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d2b3c332d3532333a733e393629362935331d3a303c3431733e3230">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-kinh-doanh-va-cong-nghe-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-kinh-doanh-va-cong-nghe-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Kinh doanh và Công nghệ Hà Nội (Thuộc trường Đại học Kinh doanh và Công nghệ Hà Nội)', 'engName': '', 'code': '', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Số 29A, ngõ 124, phố Vĩnh Tuy, phường Vĩnh Tuy, Q. Hai Bà Trưng, Hà Nội'], 'phone': '0983 282 960', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6f040601070b000e01070c0001080108070a41011e042f08020e0603410c0002">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:02:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-hung-vuong-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/cao-dang-hung-vuong-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:02:49 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 24 pages/min), scraped 42 items (at 23 items/min)
+2021-02-25 00:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-giao-thong-van-tai-trung-uong-i.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-giao-thong-van-tai-trung-uong-i.html>
+{'url': {'vnName': 'Cao đẳng Giao thông Vận tải Trung ương I', 'engName': 'The Central College of Transport 1', 'levelEdu': 'Cao đẳng - Trung cấp ', 'address': ['Xã Thụy An, huyện Ba Vì, TP. Hà Nội'], 'phone': '0243.3863.668 - 0243.3864.336', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98f1f6fef7d8ffeceeececefa9b6fdfcedb6eef6">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:02:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-du-lich-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-du-lich-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Du lịch Hà Nội', 'engName': 'Hanoi Tourism College (HTC)', 'code': 'CDT0126', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Liên thông - Tại chức', 'address': ['236 Hoàng Quốc Việt, Phường Cổ Nhuế 1, Q. Bắc Từ Liêm, Hà Nội'], 'facebook': 'https://www.facebook.com/TruongCaoDangDuLichHaNoi.HTC', 'side': 'Bac'}}
+2021-02-25 00:02:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-dong-ha-tay.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-dong-ha-tay.html>
+{'url': {'vnName': 'Cao đẳng Cộng đồng Hà Tây', 'code': 'CDD0132', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['Thủy Xuân Tiên, Chương Mỹ, Hà Nội'], 'phone': '02433.840.126', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d454c594c546d45594e4e03484958035b43">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-dong-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-dong-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Cộng đồng Hà Nội', 'engName': 'Hanoi Community College (HACO)', 'code': 'CHN', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp', 'address': ['102 Trung Kính, Cầu Giấy, Hà Nội'], 'phone': '0845112188', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f185929293b192999fdf949584df879f">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:02:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-thuong-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:02:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-thuong-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Công thương Hà Nội', 'engName': 'Hanoi College of Industry and Trade (HCIT)', 'code': 'CDD0141', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp - Đại học - Sau đại học - Liên thông - Văn bằng 2', 'address': ['Số 54A1, đường Vũ Trọng Phụng, quận Thanh Xuân, thành phố Hà Nội'], 'phone': '0243 5400 927 – 0243 2216 292', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="771f141e035912130259011937101a161e1b5914181a">[email\xa0protected]</a>', 'website': 'https://hcit.edu.vn/', 'facebook': 'https://www.facebook.com/hcit.edu.vn/', 'side': 'Bac'}}
+2021-02-25 00:03:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-nghiep-in.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-nghiep-in.html>
+{'url': {'vnName': 'Cao đẳng Công nghiệp In', 'engName': 'College of Printing Industry ', 'code': '', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Sơ cấp', 'address': ['Đường Cầu Diễn, phường Phúc Diễn, Bắc Từ Liêm, Hà Nội'], 'phone': '024 38374970 -\xa00973 515 533', 'email': 'tin<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="046c6a7c6f303670446369656d682a676b69">[email\xa0protected]</a>; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="087c7d716d667b6166606166266b6b61486f65696164266b6765">[email\xa0protected]</a> ', 'side': 'Bac'}}
+2021-02-25 00:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-va-thuong-mai-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-va-thuong-mai-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:03:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-va-moi-truong-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-nghe-va-moi-truong-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Công nghệ và Môi trường Hà Nội', 'engName': 'Hanoi Technology and Environment College (HTEC)', 'code': 'CMT', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp', 'address': ['Số 30A Vũ Hữu, Thanh Xuân Bắc, Thanh Xuân, Hà Nội'], 'phone': '(024) 38546649 - (024) 35533612 -\xa00866199036', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7013145d131e1d0430180415135e1514055e061e">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-va-kinh-te-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-nghe-va-kinh-te-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Công nghệ và Kinh tế Hà Nội', 'engName': 'Ha Noi College of Technology and Economics (HNCTE)', 'code': 'CDT0138', 'type': 'Công lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông - Tại chức', 'address': ['Trụ sở chính: Xã Đông Xuân - Huyện Sóc Sơn - Hà Nội.\xa0', 'SĐT: 0243.8843325', 'Cơ sở 2: Phường Trưng Trắc, Thành phố Phúc Yên, Tỉnh Vĩnh Phúc.\xa0', 'SĐT: 02113.869.273', 'Cơ sở 3: Thị trấn Văn Giang, Huyện Văn Giang, Tỉnh Hưng Yên.\xa0', 'SĐT: 03213.931.119'], 'phone': '0243.8843325', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc5c3ced9c8edc5c3ced9c883c8c9d883dbc3">[email\xa0protected]</a> - <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4bcbab7a0b1fab1b0a1faa2ba94b3b9b5bdb8fab7bbb9">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-cong-nghe-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Công nghệ Hà Nội', 'engName': 'Hanoi Institute of Technology (HITECH)', 'code': 'CDD0138', 'type': 'Dân lập', 'levelEdu': 'Cao đẳng - Trung cấp - Liên thông', 'address': ['Km12 - đường Cầu Diễn - Phúc Diễn - Bắc Từ Liêm - Hà Nội'], 'phone': '024.6295 2832', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1a5a4a8b4bfa2b8bfb9ffb9b8a5b4b2b991b6bcb0b8bdffb2bebc">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:03:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-bach-khoa-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://tuyensinhso.vn/school/cao-dang-cong-nghe-bach-khoa-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+Traceback (most recent call last):
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\admin\downloads\djangoproject\venv\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\Admin\Downloads\tuyensinhchannel-api-crawl\scrapy_app\scrapy_app\spiders\icrawler.py", line 64, in parse_uni
+    addressArr.append(re.search("(?<=Địa chỉ: ).*?(?=<\/s)", inforarr).group())
+AttributeError: 'NoneType' object has no attribute 'group'
+2021-02-25 00:03:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tuyensinhso.vn/school/cao-dang-co-dien-ha-noi.html> (referer: https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html)
+2021-02-25 00:03:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tuyensinhso.vn/school/cao-dang-co-dien-ha-noi.html>
+{'url': {'vnName': 'Cao đẳng Cơ điện Hà Nội', 'levelEdu': 'Cao đẳng - Trung cấp ', 'address': ['Cơ sở 1: 160 Mai dịch - Cầu giấy - Hà Nội (Trụ sở chính)', 'Cơ sở 2: 111 Phan Trọng Tuệ - Văn điển - Thanh trì - Hà Nội', 'Cơ sở 3: Đường Nguyễn Văn Linh - Phường Xuân Hoà - Vĩnh Phúc'], 'phone': '0243.8370.425', 'email': '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="205454434f4449454e48414e4f4960474d41494c0e434f4d">[email\xa0protected]</a>', 'side': 'Bac'}}
+2021-02-25 00:03:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-02-25 00:03:16 [asyncio] DEBUG: Using proactor: IocpProactor
+2021-02-25 00:03:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 29794,
+ 'downloader/request_count': 59,
+ 'downloader/request_method_count/GET': 59,
+ 'downloader/response_bytes': 714625,
+ 'downloader/response_count': 59,
+ 'downloader/response_status_count/200': 59,
+ 'elapsed_time_seconds': 147.075403,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 2, 24, 17, 3, 16, 875457),
+ 'item_scraped_count': 52,
+ 'log_count/DEBUG': 112,
+ 'log_count/ERROR': 5,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 1,
+ 'response_received_count': 59,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 58,
+ 'scheduler/dequeued/memory': 58,
+ 'scheduler/enqueued': 58,
+ 'scheduler/enqueued/memory': 58,
+ 'spider_exceptions/AttributeError': 5,
+ 'start_time': datetime.datetime(2021, 2, 24, 17, 0, 49, 800054)}
+2021-02-25 00:03:16 [scrapy.core.engine] INFO: Spider closed (finished)
