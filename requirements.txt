@@ -7,7 +7,7 @@ pyOpenSSL
 scrapy
 scrapyd
 python-scrapyd-api
-pywin32
 mysqlclient
 django
 scrapy-selenium
+scrapy-scrapingbee
