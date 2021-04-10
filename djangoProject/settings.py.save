@@ -25,7 +25,7 @@ SECRET_KEY = '208vilfhg4ysb3@0^$d&4ztwfa&@kz0x6%0jhjpzonh@bj^3sp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-'corsheaders',
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,8 +48,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'djangoProject.urls'
@@ -87,9 +83,9 @@ DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'democrawl',
-            'USER': 'dangkhoa',
-            'PASSWORD': 'Kaitokid@1412',
-            'HOST': '35.197.144.123',
+            'USER': '',
+            'PASSWORD': 'Kaitokid1412',
+            'HOST': 'mysql-oo6xr2dhmjcp6.mysql.database.azure.com',
             'PORT': '3306',
         }
 }
